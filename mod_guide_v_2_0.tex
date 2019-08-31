@@ -17,13 +17,14 @@
 \usepackage{graphics}
 \usepackage{tabularx}
 \usepackage{draftwatermark}
+\usepackage{hyperref}
 \SetWatermarkText{\textcopyright DEADSH07}
 \SetWatermarkScale{0.65}
 
 \author{DEADSH07}
 \title{PvP Masterclass\\[35pt]
 {\Huge Ultimate Modding \textit{\&} Teambuilding Guide}\\
-Version 2.0}
+Initial Public Version 1.0}
 
 
 \begin{document}
@@ -35,12 +36,12 @@ Version 2.0}
 \chapter{Bevezetés, Megjegyzések}
 \section{Disclaimer}
 Ez a dokument egy egyszerű, de ugyanakkor mégis átfogó képet igyekszik adni az egyes teamek modolásáról, TW-re és GA-ra. Egy adott karakter megfelelő modolása a kulcs a sikeres Player vs Player játékmódokban. Ugyan jobb modokkal rendelkezni ezt a sikerességet megkönnyíti, de ugyan akkor nem helyettesíti semmilyen mértékben a helyes modolást. Avagy... a speed sokat segít, de messze nem minden.\par
-Nyilvánvalóan minden szituációra nem lehet egyetlen megoldás a tökéletes,ez sem az. Ez a guide egy általánosított képet próbál adni, és helyenkéntteljesíthetetlen elvárásokat állíthat, ugyanis mint már említésre kerültnem rendelkezik mindenki ugyan olyan mélységű és mennyiségű modokkal. \par
-A felsorolt csapatok és a hozzájuk rendelt karakterek csak alegáltalánosabb összeállításokat reprezentálják, nem helyettesítik aszükséges stratégiát vagy az esetleges extra karakterek szükségességét.\\
+Nyilvánvalóan minden szituációra nem lehet egyetlen megoldás a tökéletes,ez sem az. Ez a guide egy általánosított képet próbál adni, és helyenként teljesíthetetlen elvárásokat állíthat, ugyanis mint már említésre került, nem rendelkezik mindenki ugyan olyan minőségű és mennyiségű modokkal. \par
+A felsorolt csapatok és a hozzájuk rendelt karakterek csak a legáltalánosabb összeállításokat reprezentálják, nem helyettesítik a szükséges stratégiát vagy az esetleges extra karakterek szükségességét.\\
 \\
-\textbf{Ez a dokumentum belsős MW (Mighty Wallets) dokumentumokon és bizalmasan kezelendő információkon alapul. Korlátozott, belső használatra, terjesztés csak előzetes engedéllyel.}\\
+\textbf{Ez a dokumentum belsős MAW dokumentumokon és bizalmasan kezelendő információkon alapul. Korlátozott, belső használatra, terjesztés csak előzetes engedéllyel.}\\
 \\
-\textcopyright DEADSH07 2019. június
+\textcopyright DEADSH07 2019. augusztus
 
 \section{Jelölések jegyzéke}
 \begin{center}
@@ -56,28 +57,72 @@ A felsorolt csapatok és a hozzájuk rendelt karakterek csak alegáltalánosabb 
     \end{tabularx}
 \end{center}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Change Log}
+Changes from initial revision:
+\begin{itemize}
+    \item Reorganized chapter order based on PvP relevance
+    \item Added chapters: Geonosians and Shaak Ti 501st
+    \item Speed goals adjusted to new G13 gear levels
+    \item JKR squad modified to current best counter
+    \item GR squad modified to regular use
+    \item GG squad modified to accomodate Wat Tambor
+    \item JTR squad modified to regular use
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \chapter{Darth Revan}
 \section{Mod Guide}
 \begin{center}
     \begin{tabular}{|l | l | l | l | l | l | l |}
         \hline
         Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{Darth Revan} & Speed & CD/Top Sp & Top Sp & P$>$H & - & Sp 320+\\ 
-        &  &  &  &  &  & H/P 70k\\ \hline
-        \textbf{BSF} & Speed & Top Sp & Top Sp & P$>$H & - & Sp 300+\\
+        \textbf{Darth Revan} & Speed & Top Sp & Top Sp & P$>$H & - & Sp 330+\\ 
+        &  &  &  &  &  & H/P 80k\\ \hline
+        \textbf{BSF} & Speed & Top Sp & Top Sp & P$>$H & - & Sp 310+\\
         &  &  &  &  &  & \\ \hline
-        \textbf{Darth Malak} & Speed+ & Prot & Prot & P$>$H & Sp = BSF + 1 & Sp 300+\\
-        & HP/HP x 3 &  &  &  &  & H/P 150k\\ \hline
-        \textbf{HK-47} & Offense+CC & CD & Offense & P$>$H & - & Sp 220+\\
-        &  &  &  &  &  & Offense 3750+\\ \hline
-        \textbf{Marauder} & Offense/ & CD & Offense & P$>$H & - & Sp 230+\\
-        & CD+HP &  &  &  &  & Offense 3000+\\ \hline
+        \textbf{Darth Malak} & HP x 3 & Prot & Prot & P$>$H & - & Sp 300+\\
+        & Tenacity x 3 &  &  &  &  & H/P 150k\\ \hline
+        \textbf{HK-47} & Offense+CC & CD/CC & Offense & P$>$H & - & Sp 220+\\
+        &  &  &  &  &  & Offense 5000+\\ \hline
+        \textbf{Marauder} & Offense/ & CD & Offense & P$>$H & - & Sp 240+\\
+        & CD+HP &  &  &  &  & Offense 4000+\\ \hline
     \end{tabular}
 \end{center}
 \section{Team Synergy \textit{\&} Strategy}
 Kétség sem fér hozzá, a DR teamek jelenleg a legerősebb teamek a játékban. \par
-A csapat összeállításánál és modolásánál így igazából amire figyelni kell az az, hogy a nem mirror countereket a lehetőségekhez mérten legjobban eliminálni tudjuk. Erre szolgál \emph{Marauder} a csapatban. A standard Sith Trooper-el felálló teamhez képest a tank lecserélése kinyírja az egyetlen megbízható JKR countert, így egy egyenlő erősségű ellenféllel szemben a Sith Trooperrel felálló csapat mindenképp kerülendő.\par
-Alternatívák a csapatba Marauder helyett \emph{Sith Assassin}.
+A csapat összeállításánál és modolásánál így igazából amire figyelni kell az az, hogy a nem mirror countereket a lehetőségekhez mérten legjobban eliminálni tudjuk.\par
+Ennek érdekében érdemes HK CC-jét annyira felnyomni, amennyire csak lehet, ugyanis ez nagyban hozzá tud járulni egy sikeres védekező csapathoz, hiszen az Assassination Protocol gyakorlatilag critical hit esetén insta kill. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Separatist (GG Droid)}
+\section{Mod Guide}
+\begin{center}
+    \begin{tabular}{|l | l | l | l | l | l | l |}
+        \hline
+        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
+        \textbf{GG} & HP x 3 & CD & HP & HP & 6E HP & Sp 220+\\
+        &  &  &  &  & modok & HP 100k+\\ \hline
+        \textbf{B1} & Speed+ & Offense & Offense & Top Sp/ & Nincs crit, H/P & Sp 290+\\
+        & Potency &  &  & Potency & nem számít & \\ \hline
+        \textbf{B2} & Tenacity x 3 & Prot & Potency & Prot & Crit Avoidance & Potency 100\%+\\
+        &  &  &  &  & Nyíl & Tenacity 100\%+\\ \hline
+        \textbf{IG-100} & Defense+HP & Prot & Prot & Prot & - & Sp 200+\\
+        &  &  &  &  &  & H/P 150k+\\ \hline
+        \textbf{Nute} & Speed+HP & H/P & H/P & P$>$H & - & Sp 290+\\
+        &  &  &  &  &  & \\ \hline
+        \textbf{Wat} & Speed+HP & H/P & H/P & Prot & - & Sp 290+\\
+        &  &  &  &  &  & \\ \hline        
+    \end{tabular}
+\end{center}
+\section{Team Synergy \textit{\&} Strategy}
+A G13-as korszakban a GG droid/separatist team egyértelműen a második erőnek lépett elő védelem tekintetében. A csapat legfontosabb láncszeme és motorja B2, ő az, aki ha túl tud élni elég ideig, szinte akármilyen ellenfél ellen van esélye sikeresen védekezni.\par
+Wat Tambor illetve Nute Gunray két egészen különböző countereket provokáló utolsó láncszem a csapatba. Egy gyors Wat/Nute illetve egy gyors B1 droiddal a GG team egy félelmetes ellenfél.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Jedi Knight Revan}
 \section{Mod Guide}
@@ -85,21 +130,36 @@ Alternatívák a csapatba Marauder helyett \emph{Sith Assassin}.
     \begin{tabular}{|l | l | l | l | l | l | l |}
         \hline
         Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{JKR} & Speed & CD/Top Sp & Offense/Top Sp & P$>$H & - & Sp 310+\\ 
+        \textbf{JKR} & Speed & CD/Top Sp & Offense/Top Sp & P$>$H & - & Sp: képlet\\ 
         &  &  &  &  &  & H/P 70k\\ \hline
-        \textbf{GMY} & Offense+CC & CD & Offense & P$>$H & - & Sp 270-280\\
-        &  &  &  &  &  & Offense 6k\\ \hline        
-        \textbf{Jolee} & HP x 3 & HP & HP & HP & Lehet Tenacity & Sp 200+\\
-        &  &  &  &  & kereszt is & HP 55k+\\ \hline
-        \textbf{Old Ben} & Speed + & Prot & Potency & P$>$H & - & Sp 220+\\
-        & Potency &  &  &  &  & \\ \hline
-        \textbf{Ezra} & CD + CC & CD & Offense & P$>$H & - & Sp 240+\\
+        \textbf{Bastila} & Speed & Top Sp & Top Sp & P$>$H & - & Sp 285+\\
+        &  &  &  &  &  & \\ \hline        
+        \textbf{Jolee} & Tenacity x 3 & Tenacity & Prot & P$>$H & CritAvoidance & Sp 210+\\
+        &  &  &  &  & Nyíl & Tenacity 140\%+\\ \hline
+        \textbf{JKA} & CD+CC & CD & Offense & P$>$H & - & Sp: képlet\\
+        &  &  &  &  &  & Offense 5000+\\ \hline
+        \textbf{Hoda} & Speed & H/P & H/P & P$>$H & - & JKR-1\\
         &  &  &  &  &  &  \\ \hline
     \end{tabular}
 \end{center}
 \section{Team Synergy \textit{\&} Strategy}
-A javasolt JKR team első sorban védekezni optimalizált, és egy mély és széles rosterhez ajánlott, teljes GR teamet is feltételezve. Ezra-val és Old Ben-nel gyakorlatilag az RJT counter teljesen eliminálható azzal együtt, hogy a többi counter dolgát sem teszik könnyűvé.\par
-A csapat magja továbbra is a JKR-GMY-Jolee trió, a másik két hely variálható annak függvényében, hogy mire szeretné az ember használni őket. Amennyiben ez a cél éppen egy DR team kiszedése, a variálható két helyre Hermit Yoda valamint Bastila Shan javasolt (Sith Trooper jelenlétében Thrawn Bastila helyett).
+A fent leírt JKR team a jelnegi legbiztosabb DR counter a játékban. Anakinnal felállva gyakorlatilag elkerülhetetlen az, hogy legalább 3 karakter a Sith Empire teamből ne haljon meg a csata végére.\\
+A sebességek kiszámításához szükséges képletek:\\
+Legyőzhető leggyorsabb DR team:
+\begin{equation}
+    Baseline=\frac{(Bastila+40)}{0.95}-1
+\end{equation}
+JKR Speed:
+\begin{equation}
+    JKR=Baseline-39
+\end{equation}
+Anakin Speed
+\begin{equation}
+    Anakin=((JKR+40)*0.89)-40
+\end{equation}
+\href{https://youtu.be/IH_Xo9CuSho}{Gameplay és magyarázat}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Galactic Republic}
 \section{Mod Guide}
@@ -107,24 +167,71 @@ A csapat magja továbbra is a JKR-GMY-Jolee trió, a másik két hely variálhat
     \begin{tabular}{|l | l | l | l | l | l | l |}
         \hline
         Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{Padmé} & HP x 3 & HP & HP & HP & - & Sp 220 alatt\\ 
+        \textbf{Padmé} & HP x 3 & HP & HP & HP & - & Sp 290+\\ 
         &  &  &  &  &  & HP 60k+\\ \hline
-        \textbf{GK} & HP x 3 & H$>$P & H$>$P & H$>$P & - & 220+\\
+        \textbf{GK} & HP x 3 & H$>$P & H$>$P & H$>$P & - & 250+\\
         &  &  &  &  &  & H/P 100k+\\ \hline        
-        \textbf{JKA} & CD + CC & CD & Offense & H$>$P & Minél több offense & Sp 220+\\
+        \textbf{GMY} & Offense + & CD & Offense & H$>$P & Minél több offense & Sp 290+\\
+        & CC/HP &  &  &  & Leggyorsabb & \\ \hline
+        \textbf{Ahsoka} & CD + CC/HP & CD & HP & HP & - & Sp 200+\\
         &  &  &  &  &  & \\ \hline
-        \textbf{Ahsoka} & CD + CC & CD & Offense & HP & Minél több offense & Sp minimum\\
-        &  &  &  &  &  & Padmé -49\\ \hline        
+        \textbf{C-3PO} & Speed & H/P & Potency & H/P & - & Sp 260+\\
+        &  &  &  &  &  & \\ \hline        
     \end{tabular}
 \end{center}
 \section{Team Synergy \textit{\&} Strategy}
-Padmé-nak köszönhetően az új GR team a legmegbízhatóbb DR counterré lépett elő a megfelelő modolással és (sajnos) az összes zetával. A fenti modolás a DR counterre vonatkozik. Ami a kulcs, hogy ez esetben mindenképp Padmé kell, hogy a leglassabb legyen.\par
-Sokszor kérdés ezzel a teammel kapcsolatban a zeta priority. Ez amennyiben DR counter a cél, a következő:\\
-\textbf{Padmé lead $>$ GK $>$ JKA $>$ Ahsoka $>$ Padmé unique}\par
-Amennyiben pedig védekező csapatot épít az ember:\\
-\textbf{Padmé lead $>$ GK $>$ Ahsoka $>$ Padmé unique $>$ JKA}\par
-Ez utóbbi esetben a modolás is módosul, ilyenkor Padmé esetében 300+ Speed-re kell törekedni, valamint Ahsoka lehet lassabb jóval, Offense nyíllal felszerelve.\par
-Az utolsó tag a csapatban szándéoksan nincs feltüntetve, ide ugyanis több karakter is jó lehet, kezdve Barris(z)-tól, C-3PO-n át egészen akár Fives-ig. Jelen pillanatban erre a helyre mindenkinek érdemes magának kitapasztalnia a legjobb ötödik tagot.
+A Galactic Republic team támadásban rendkívül sokoldalú, gyakorlatilag a legjobb DR teamek kivételével mindent meg lehet velük verni, védekezésben pedig egy rendkívül kellemetlen ellenfél elég kevés igazi counterrel, ráadásul igen nehezen grind-olható.\par
+A GG illetve NS teamek countereléséhez fontos, hogy GMY legyen a csapatban a leggyorsabb karakter, és kezdeni tudjon a foresight+tenacity up kombóval.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Geonosians}
+\section{Mod Guide}
+\begin{center}
+    \begin{tabular}{|l | l | l | l | l | l | l |}
+        \hline
+        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
+        \textbf{Brood} & Speed & Top Sp & Top Sp & P$>$H & - & Sp 290+\\
+        \textbf{Alpha} &  &  &  &  &  & \\ \hline
+        \textbf{Soldier} & CD + CC & CD & Offense & P$>$H & - & Sp 240+\\
+        &  &  &  &  &  & CC 100\%+\\ \hline
+        \textbf{Spy} & CD + CC & CD & Offense & P$>$H & - & Sp 210+\\
+        &  &  &  &  &  & \\ \hline
+        \textbf{Sun Fac} & Tenacity $>$ & Prot & Tenacity & P$>$H & - & Sp 190+\\
+        & HP &  &  &  &  & \\ \hline
+        \textbf{Poggle} & Potency x 3 & H/P & Potency & P$>$H & - & Sp 220+\\
+        &  &  &  &  &  & \\ \hline
+    \end{tabular}
+\end{center}
+\section{Team Synergy \textit{\&} Strategy}
+A geonosian team Brood Alpha érkezésével egy teljesen jelentéktelen teamből egy top PvP csapattá lépett elő. A hive mind és az elképesztő mennyiségű assist miatt a geo csapat rendkívül kevés counterrel rendelkezik, és pár kivétellel a legjobb meta teamek ellen is jó esélyekkel veszi fel a küzdelmet támadásban.\par
+Mivel Brood Alpha adja meg a "kezdő lökést", neki kell leggyorsabbnak lennie, ezután pedig egy 100\%+ CC-vel rendelkező Soldier tartja mozgásban a csapatot.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Shaak Ti 501st}
+\section{Mod Guide}
+\begin{center}
+    \begin{tabular}{|l | l | l | l | l | l | l |}
+        \hline
+        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
+        \textbf{Shaak Ti} & Speed+ & H/P & H/P & P$>$H & - & Sp 300+\\
+        & Tenacity/HP &  &  &  &  & \\ \hline
+        \textbf{Rex} & Speed + & H/P & Tenacity & P$>$H &  & Sp 270+\\
+        & Tenacity &  &  &  &  & Tenacity 100\%+\\ \hline
+        \textbf{Fives} & HP/Tenacity & H/P & Tenacity & H$>$P & - & SP 200+\\
+        &  &  &  &  &  & Tenacity 130\%+\\ \hline
+        \textbf{Echo} & Offense + & CD & Offense & P$>$H & - & Sp 220+\\
+        & HP/CC &  &  &  &  & \\ \hline
+        \textbf{Sergant} & CD + CC & CD & Offense & P$>$H & - & Sp 170+\\
+        &  &  &  &  &  & \\ \hline
+    \end{tabular}
+\end{center}
+\section{Team Synergy \textit{\&} Strategy}
+Az 501-es reworkkel a Shaak Ti klón csapat igazi top teammé lépett elő. Az új zetáknak köszönhetően még gyorsabbak, még inkább képesek regenerálódni illetve a túlélési képességeik is lényegesen jobbak.\par
+A két legfontosabb láncszem a csapatban a leader Shaak Ti, valamint Echo, előbbi a unique-ból adódó counterek miatt, utóbbi pedig a fő damage forrás.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Sith Triumvirate}
 \section{Mod Guide}
@@ -132,19 +239,69 @@ Az utolsó tag a csapatban szándéoksan nincs feltüntetve, ide ugyanis több k
     \begin{tabular}{|l | l | l | l | l | l | l |}
         \hline
         Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{Traya} & Tenacity+HP+ & Prot & Tenacity & Prot & Crit avoidance nyíl & Sp 230, Tena 100\%\\
-        & Defense &  &  &  & és megfelelő speed & H/P 100k \\ \hline
+        \textbf{Traya} & HP & H/P & H/P & P$>$H & - & Sp 270+\\
+        &  &  &  &  &  & H/P 120k+ \\ \hline
         \textbf{Darth} & Speed+HP & H$>$P & H$>$P & H$>$P & - & Sp 240+\\
         \textbf{Nihilus} &  &  &  &  &  & \\ \hline
-        \textbf{Darth} & Speed+HP & Prot$>$CD & Prot & Prot & Tartósság előtérben & Sp 270+\\
-        \textbf{Sion} &  &  &  &  & DMG helyett & H/P 100k\\ \hline
+        \textbf{Darth} & Speed+HP & Prot$>$CD & Prot & Prot & - & Sp 270+\\
+        \textbf{Sion} &  &  &  &  &  & H/P 100k\\ \hline
         \textbf{Sith} & HP/ & Prot & Prot & Prot & - & H/P 110k+\\
         \textbf{Trooper} & Defense &  &  &  &  & \\ \hline              
     \end{tabular}
 \end{center}
 \section{Team Synergy \textit{\&} Strategy}
-A DR meta érkezésével, és BSF kikerülésével a csapatból a Triumvirátus képessége arra, hogy meg tudja verni a JKR teameket erősen lecsökkent, ugyanakkor igen kevésszer kerül rá igény is. Ennek ellenére én személy szerint továbbra is azt javaslom, hogy Traya-t JKR counterre modolva tartsa az ember. Egy felől így is ugyan olyan kiválóan működik, másrészt pedig így a kapu mindig nyitva áll, ha mégis szükséges lenne JKR counterként használni a Trium teamet.\par
-A csapat ötödik tagja lehet vagy akármilyen tetszőleges Sith, vagy akár 4 fős csapatként is tökéletesen megállják a helyüket. Egy esetleges GR team countereként ajánlatos Thrawn használata (csakúgy mint JKR ellen is, értelem szerűen).
+A Sith Triumvirate team lassan kezd leszorulni a kulcs counterek listájáról, azonban még továbbra is a legjobb meta teamek kivételével szinte bármit képesek megverni, méghozzá könnyedén. A korábbi JKR counterre való Traya modolásról érdemes most már visszatérni a megszokottabb, gyorsabb Traya-ra.\par
+A csapat ötödik tagja lehet vagy akármilyen tetszőleges Sith, vagy akár 4 fős csapatként is tökéletesen megállják a helyüket. Egy esetleges GR team countereként ajánlatos Thrawn használata.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Rebel (CLS)}
+\section{Mod Guide}
+\begin{center}
+    \begin{tabular}{|l | l | l | l | l | l | l |}
+        \hline
+        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
+        \textbf{CLS} & CD + CC & CD & Offense & H/P & Damage $>$ Speed & Sp 270+\\
+        &  &  &  &  &  & Offense 4000+\\ \hline
+        \textbf{Han} & CD + CC & CD & Offense & H/P & Damage $>$ Speed & Sp 200+\\
+        &  &  &  &  &  & Offense 5000+\\ \hline
+        \textbf{Chewie} & Offense + CC & CD & Offense & H/P & Damage $>$ Speed & Sp 240+\\ 
+        &  &  &  &  &  & Offense 5500+\\ \hline
+        \textbf{Chirrut} & HP x 3 & Prot & Prot & P$>$H & Több H/P mint CLS-nek & Sp 240+\\
+        &  &  &  &  &  & \\ \hline
+        \textbf{Baze} & HP x 3 & H/P & H/P & H/P & Akár Prot Nyíl & H/P 110+\\
+        &  &  &  &  &  & \\ \hline
+    \end{tabular}
+\end{center}
+\section{Team Synergy \textit{\&} Strategy}
+A legfontosabb a CLS 3.0 csapatnál az, hogy a guard mindenképp CLS-re kerüljön. Emiatt Chirrut modolása különösen fontos, ha neki nincs elég H/P-ja, akkor rá fog kerülni a guard, ami mindenképp kerülendő.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Nightsister}
+\section{Mod Guide}
+\begin{center}
+    \begin{tabular}{|l | l | l | l | l | l | l |}
+        \hline
+        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
+        \textbf{Ventress} & CD + HP/ & CD & Offense & HP & Speed annyira & Sp 210+\\
+        & Potency &  &  &  &  nem fontos & Offense 3500+\\ \hline
+        \textbf{Talzin} & Offense+ & CD/ & Offense/ & HP & - & Sp.Offense 7500+\\
+        & CC & Offense & Potency &  &  & Sp 240+, Potency 70\%+\\ \hline
+        \textbf{Daka} & Speed+HP/ & HP & Potency & HP & Második & Sp 280+\\
+        & Potency &  &  &  & leggyorsabb & Potency 80\%+\\ \hline
+        \textbf{Zombie} & HP x 3 & 6E HP & 6E HP & 6E HP & - & Sp 240+\\
+        &  &  &  &  &  & Health 60k\\ \hline
+        \textbf{Spirit} & Speed+CC & CD & Offense/ & Health & Leggyorsabb & Sp 290+\\
+        &  &  & Potency &  &  & \\ \hline
+    \end{tabular}
+\end{center}
+\section{Team Synergy \textit{\&} Strategy}
+A Nightsister csapat megfelelően modolva még mindig az egyik legerősebb védekező csapat. Ehhez kulcs, hogy Spirit és Daka legyenek olyan gyorsak amennyire csak lehet, hogy pár Stun-nal az elején lépéselőnybe kerüljön a csapat.\par
+Fontos, hogy védekezéshez mindig AV lead használatos. MT leaddel az AI messze messze nem bánik olyan jól a kicsit speciális mechanikák miatt.\par
+Támadáshoz a csapat kicsit variálható, Spirit hiányában lehet helyette mást is használni, de a teljes potenciál eléréséhez elengedhetetlen a fent említett ötös.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Resistance (JTR)}
 \section{Mod Guide}
@@ -158,40 +315,17 @@ A csapat ötödik tagja lehet vagy akármilyen tetszőleges Sith, vagy akár 4 f
         &  & Top Sp & Top Sp &  &  & \\ \hline
         \textbf{R2-D2} & Speed+CC & CC/Prot & Potency/ & H/P & CC segít expose-t & Sp 280+\\
         &  &  & Prot &  & felrakni & \\ \hline
-        \textbf{C-3PO} & Speed+ & H/P & Potency & H/P & - & Sp 250+\\
-        & Potency & Top Sp &  &  &  & Potency 100\%+\\ \hline
-        \textbf{SRP} & HP x 3 & 6E HP & 6E HP & 6E HP & 6E HP Nyíl & HP 70k+\\
+        \textbf{RT} & CD + CC & CD & Offense & P$>$H & Offense & Offense 3500+\\
+        &  &  &  &  & Nyíl & \\ \hline
+        \textbf{Finn} & CD + CC & CD & Offense & P$>$H & - & Sp 190+\\
         &  &  &  &  &  & \\ \hline   
     \end{tabular}
 \end{center}
 \section{Team Synergy \textit{\&} Strategy}
-Ugyan hasonlóan a Trium teamnél, annyira itt sem kell már azzal számolni, hogy JKR teameket kell ölni Resistance-el, de azért továbbra is érdemes biztosítani azt, hogy a leggyorsabb JKR teameknél is előbb jöjjön az ember. BB-8 miatt ebben segít a 8\% TM/droid az elején, vagyis:
-\begin{equation}
-    ActualDroidSpeed = \frac{DroidSpeed}{1-(NumberOfDroids*0.08)}        
-\end{equation}
-SRP-re a 6E Health modok azért fontosak, mert így amikor újraéled,lényegesen több HP-ja lesz, tehát jobban megéri Health primary modokatpakolni rá protection helyett.\par
-Amennyiben az ember nem JKR ellen akarja használni a teamet, úgy SRP lecserélhető tetszőleges másik Resistance karakterre, valamint C-3PO sem fontos. Ideális helyettesítő karakterek Finn és RT.
+Az egyre több erős team megjelenésével a JTR teamek jelentősége egyre kisebb és kisebb, ugyanakkor GA-ra még mindig egy jelentős támadó erőt képviselnek. A két droidot továbbra is érdemes gyorsan tartani, hiszen ők azok, akik a teamet indítják, és BB-8 az, aki mozgásban is tartja őket.\par
+Finn helyettesíthető mással is, de a reworkje után ajánlatos őt használni.
 
-\chapter{Utility Karakterek}
-\section{Mod Guide}
-\begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
-        \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{Wampa} & CD+ & CD & Offense/ & P$>$H & - & Sp 210+\\
-        & Tenacity &  & Tenacity &  &  & Tenacity 100\%\\ \hline
-        \textbf{Nest} & Tenacity x 3 & CD & Tenacity & H$>$P & Gyors és & Sp 300+\\
-        &  &  &  &  & magas Tenacity & Tenacity 130\%+\\ \hline
-        \textbf{CHS} & Speed+HP & HP & HP & H$>$P & Heal a max & SP 220+\\
-        &  &  &  &  & HP függvénye & \\ \hline
-        \textbf{Thrawn} & Speed & Top Sp & Top Sp & P$>$H & - & Sp 300+\\
-        &  &  &  &  &  & \\ \hline
-        \textbf{Barris} & HP x 3 & 6E HP & 6E HP & 6E HP & 6E HP nyíl & HP 50k+\\
-        &  &  &  &  &  & \\ \hline
-    \end{tabular}
-\end{center}
-\section{Team Synergy \textit{\&} Strategy}
-Ezek a karakterek nem szerves részei egy csapatnak sem, ellenben stratégiai szempontból mégis rendkívül fontosak, és mindenképp javasolt őket az elsők között megfelelően modolni.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Bounty Hunter}
 \section{Mod Guide}
@@ -217,7 +351,33 @@ Ezek a karakterek nem szerves részei egy csapatnak sem, ellenben stratégiai sz
 \section{Team Synergy \textit{\&} Strategy}
 Ennél a csapatnál különösen fontos hogy gyorsak legyenek a kulcs karakterek (Bossk és/vagy Jango) hogy a rettentő olcsó IT countert meg tudják akadályozni.\par
 Mind a két leader életképes, kicsit más ellen erősebbek védekezésben. Az alap kvartett mindig ugyan az, Bossk-Jango-Boba-Dengar. Az ötödik leadertől függően vagy egy ötödik BH, vagy pedig valamilyen utility karakter.\par
-Jango lead alatt érdemes kihasználni azt, hogy Zam amúgy is gyors, és a leadtől még gyorsabb, valamint hogy a bombái nem mennek át tenacity/potency checken (és így fel tudja őket dobni egy BS lead jedi csapatra is). Bossk lead alatt ellenben érdemes Embo-t használni, mivel alapvetően egy sokkal erősebb karakter.
+Jango lead alatt érdemes kihasználni azt, hogy Zam amúgy is gyors, és a leadtől még gyorsabb, valamint hogy a bombái nem mennek át tenacity/potency checken. Bossk lead alatt ellenben érdemes Embo-t használni, mivel alapvetően egy sokkal erősebb karakter.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Empire}
+\section{Mod Guide}
+\begin{center}
+    \begin{tabular}{|l | l | l | l | l | l | l |}
+        \hline
+        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
+        \textbf{Palpatine} & Speed+ & Prot & Prot/ & H/P & Magas & Sp 260+\\
+        & Potency &  & Potency &  & Potency & Potency 90\%+\\ \hline
+        \textbf{Vader} & Speed+ & CD & Potency/ & H/P & Leggyorsabb & Sp 270+\\
+        & Potency &  & Offense &  & bónusszal & \\ \hline
+        \textbf{Tarkin} & Speed+ & Prot/CD & Potency & H/P & - & Sp 250+\\
+        & Potency &  &  &  &  & Potency 80\%+\\ \hline
+        \textbf{Shore} & HP x 3 & H/P & H/P & H/P & - & Sp 200+\\
+        &  &  &  &  &  & H/P 90k+\\ \hline
+        \textbf{DT} & CD + CC & CD & Offense & H/P & - & Sp 220+\\
+        &  &  &  &  &  & \\ \hline
+    \end{tabular}
+\end{center}
+\section{Team Synergy \textit{\&} Strategy}
+A Palpatine lead empire csapat rendkívül erősen támaszkodik debuffokra, így számukra a potency nagyon fontos. A csapat motorja Vader, akinek fontos, hogy a saber-throw-al elég TM-t adjon a csapatnak a kezdéshez.\par
+Mivel a csapat elsődleges célpontja a NS teamek, és mivel egyre többen kezdik megfelelően gyorsra modolni a lányokat, így fontos, hogy Vader kerüljön olyan közel a 270-es határhoz, amennyire csak lehet, hogy meg tudja előzni a leggyorsabb NS teamet is. Ezen felül fontos, hogy a csapat többi tagja, első sorban Palpatine és Tarkin is 250 felett legyen, hogy biztosítva legyen az, hogy ők is az ellenfél NS team előtt jönnek.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{First Order}
 \section{Mod Guide}
@@ -239,26 +399,7 @@ Jango lead alatt érdemes kihasználni azt, hogy Zam amúgy is gyors, és a lead
 A jól modolt First Order team hasonlóan a BH-hoz egy elképesztően erős fegyver lehet mind defensen, mind pedig támadásban. A kulcs ahhoz, hogy a csapat hatékony legyen az, hogy kihasználjuk KRU unique-ját, aminek köszönhetően minden sebzés után HP-t nyer vissza. Ha 60k fölé sikerül tornázni ezt az értéket, nem megfelelő team napestig üthetné, ugyanis egész egyszerűen csak healelnék sebzés helyett.\par
 Az utolsó hely a teamen flexibilis, akár egy utility karakter, akár egy tetszőleges ötödik FO karakter berakható.
 
-\chapter{Rebel (CLS)}
-\section{Mod Guide}
-\begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
-        \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{CLS} & CD+CC & CD & Offense & H/P & Damage $>$ Speed & Sp 250+\\
-        &  &  &  &  &  & Phys.Dmg 4k+\\ \hline
-        \textbf{Han} & CD+CC & CD & Offense & H/P & Damage $>$ Speed & Sp 170+\\
-        &  &  &  &  &  & Phys.Dmg 3.5k+\\ \hline
-        \textbf{Chewie} & Offense+CC & CD & Offense & H/P & Damage $>$ Speed & Sp 210+\\ 
-        &  &  &  &  &  & Phys.Dmg 5k+\\ \hline
-        \textbf{Chirrut} & HP x 3 & Prot & Prot & P$>$H & Több H/P mint CLS-nek & Sp 240+\\
-        &  &  &  &  &  & \\ \hline
-        \textbf{Baze} & HP x 3 & H/P & H/P & H/P & Akár Prot Nyíl & H/P 110+\\
-        &  &  &  &  &  & \\ \hline
-    \end{tabular}
-\end{center}
-\section{Team Synergy \textit{\&} Strategy}
-A legfontosabb a CLS 3.0 csapatnál az, hogy a guard mindenképp CLS-re kerüljön. Emiatt Chirrut modolása különösen fontos, ha neki nincs elég H/P-ja, akkor rá fog kerülni a guard, ami mindenképp kerülendő.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Scoundrel}
 \section{Mod Guide}
@@ -275,7 +416,10 @@ A legfontosabb a CLS 3.0 csapatnál az, hogy a guard mindenképp CLS-re kerülj�
     \end{tabular}
 \end{center}
 \section{Team Synergy \textit{\&} Strategy}
-A scoundrel team többi tagja általában a Utility karakterek közül kerül ki, ugyanis se Young Lando, se Young Han nem túlzottan remek az AI irányítása alatt. A csapat L3 tauntján és Vandor Chewie prepared-en történő újraélesztésén alapul, ők ketten a csapat motorjai.
+A scoundrel team többi tagja általában a Utility karakterek közül kerül ki, ugyanis se Young Lando, se Young Han nem túlzottan remek az AI irányítása alatt. A csapat L3 tauntján és Vandor Chewie prepared-en történő újraélesztésén alapul, ők ketten a csapat motorjai.\par
+Az egyre több lényegesen erősebb team megjelenésével érdemes elgondolkodni a Scoundrel és Old Republic teamek kombinálásán.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Old Republic}
 \section{Mod Guide}
@@ -297,73 +441,9 @@ A scoundrel team többi tagja általában a Utility karakterek közül kerül ki
 \end{center}
 \section{Team Synergy \textit{\&} Strategy}
 Az Old Republic csapat modolásakor különös figyelmet kell fordítani arra, hogy a team legnagyobb ellensége a daze és a buff immunity Zaalbar-on. Emiatt annyi Tenacity-t kell rájuk tenni kollektíve, amennnyit csak lehetséges, ezzel eliminálva szinte minden budget countert.\par
-Juhani helye a csapatban flexibilis, ő helyettesíthető egy megfelelő Utility karakterrel.
+Az egyre több lényegesen erősebb team megjelenésével érdemes elgondolkodni az Old Republic és Scoundrel teamek kombinálásán.
 
-\chapter{Nightsister}
-\section{Mod Guide}
-\begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
-        \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{Ventress} & CD+HP/ & CD & Offense & HP & Speed annyira & Sp 190+\\
-        & Potency &  &  &  &  nem fontos & CC 50\%\\ \hline
-        \textbf{Talzin} & Offense+CC & CD/ & Offense/ & HP & - & Sp.Dmg 6k+\\
-        &  & Offense & Potency &  &  & Sp 230+, Potency 70\%+\\ \hline
-        \textbf{Daka} & Speed+HP/ & HP & Potency & HP & Második & Sp 270+\\
-        & Potency &  &  &  & leggyorsabb & Potency 80\%+\\ \hline
-        \textbf{Zombie} & HP x 3 & 6E HP & 6E HP & 6E HP & - & Sp 230+\\
-        &  &  &  &  &  & Health 60k\\ \hline
-        \textbf{Spirit} & Speed+CC & CD & Offense/ & Health & Leggyorsabb & Sp 280+\\
-        &  &  & Potency &  &  & \\ \hline
-    \end{tabular}
-\end{center}
-\section{Team Synergy \textit{\&} Strategy}
-A Nightsister csapat megfelelően modolva még mindig az egyik legerősebb védekező csapat. Ehhez kulcs, hogy Spirit és Daka legyenek olyan gyorsak amennyire csak lehet, hogy pár Stun-nal az elején lépéselőnybe kerüljön a csapat.\par
-Fontos, hogy védekezéshez mindig AV lead használatos. MT leaddel az AI messze messze nem bánik olyan jól a kicsit speciális mechanikák miatt.\par
-Támadáshoz a csapat kicsit variálható, Spirit hiányában lehet helyette mást is használni, de a teljes potenciál eléréséhez elengedhetetlen a fent említett ötös.
-
-\chapter{Bastila Jedi}
-\section{Mod Guide}
-\begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
-        \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{Bastila} & Speed+ & H$>$P & Potency & H$>$P & - & Sp 230+\\
-        & Potency &  &  &  &  & H/P 100k\\ \hline
-        \textbf{Hoda} & Speed+HP & Top Sp & Top Sp & H$>$P & - & Sp 280+\\
-        &  &  &  &  &  & \\ \hline                
-        \textbf{Kanan} & HP x 3 & H$>$P & H$>$P & H$>$P & - & Sp 190\\
-        &  &  &  &  &  & H/P 90k\\ \hline
-        \textbf{Wampa} & CD+ & CD & Offense/ & P$>$H & - & Sp 210+\\
-        & Tenacity &  & Tenacity &  &  & Tenacity 100\%\\ \hline
-    \end{tabular}
-\end{center}
-\section{Team Synergy \textit{\&} Strategy}
-Az új GR team miatt a Bastila lead Jedi csapat erősen át kellett, hogy alakuljon. Amennyiben van kapacitás egy második Jedi team felállítására egyáltalán, úgy mindenképp érdemes Wampa-t kihasználni mint damage-forrás, nélküle a maradék Jedi igencsak vékony ezen a téren. Teljesen valid megoldás ugyanakkor Bastila JKR teambe való integrálása is.\par
-Az utolsó, ötödik helyre igazából bármely elég magas gearrel rendelkező Jedi berakható, és Kanan helye sem fix a csapatban.\par
-A modolásnál érdemes figyelembe venni, hogy a kapott bónusz protection a maximális HP függvénye. A leaderből kapott +15\% TM miatt a csapat sebessége lehet a szokásosnál alacsonyabb.
-
-\chapter{Empire}
-\section{Mod Guide}
-\begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
-        \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{Palpatine} & Speed+ & Prot & Prot/ & H/P & Magas & Sp 230\\
-        & Potency &  & Potency &  & Potency & Potency 90\%+\\ \hline
-        \textbf{Vader} & Speed+ & CD & Potency/ & H/P & Leggyorsabb & Sp 250+\\
-        & Potency &  & Offense &  & bónusszal & \\ \hline
-        \textbf{Tarkin} & Speed+ & Prot/CD & Potency & H/P & - & Sp 230+\\
-        & Potency &  &  &  &  & Potency 80\%+\\ \hline
-        \textbf{Shore} & HP x 3 & H/P & H/P & H/P & - & Sp 190+\\
-        &  &  &  &  &  & H/P 90k+\\ \hline
-        \textbf{DT} & CD+CC & CD & Offense & H/P & - & Sp 200+\\
-        &  &  &  &  &  & \\ \hline
-    \end{tabular}
-\end{center}
-\section{Team Synergy \textit{\&} Strategy}
-A Palpatine lead empire csapat rendkívül erősen támaszkodik debuffokra, így számukra a potency nagyon fontos. A csapat motorja Vader, akinek fontos, hogy a saber-throw-al elég TM-t adjon a csapatnak a kezdéshez.\par
-Mivel a csapat elsődleges célpontja a NS teamek, és mivel egyre többen kezdik megfelelően gyorsra modolni a lányokat, így fontos, hogy Vader kerüljön olyan közel a 250-es határhoz, amennyire csak lehet, hogy meg tudja előzni a leggyorsabb NS-t.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Imperial Trooper}
 \section{Mod Guide}
@@ -373,7 +453,7 @@ Mivel a csapat elsődleges célpontja a NS teamek, és mivel egyre többen kezdi
         Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
         \textbf{Veers} & CD+CC/ & CD & Offense & P$>$H & - & $Sp = ((Starck+20)*0.6)-20$\\
         & Potency &  &  &  &  & \\ \hline
-        \textbf{Starck} & Speed & CD/ & Offense/ & Top Sp & Leggyorsabb & Sp 280+\\
+        \textbf{Starck} & Speed & CD/ & Offense/ & Top Sp & Leggyorsabb & Sp 290+\\
         &  & Top Sp & Top Sp &  &  & \\ \hline
         \textbf{Range} & CD+CC/ & CD & Offense & P$>$H & Második & $Sp = ((Starck+20)*0.8)-20$\\
         & Speed+CC &  &  &  & leggyorsabb & \\ \hline
@@ -385,6 +465,8 @@ Mivel a csapat elsődleges célpontja a NS teamek, és mivel egyre többen kezdi
 Egy jól működő IT team kulcsa az, hogy a modjaik, pontosabban a sebességük megfelelően legyen finomhangolva. Amennyiben Range Starck-tól 20\% TM-t kapva éri el a 100\%-ot, a többiek pedig Range-től 20\%-ot kapva érik el a 100\%-ot maximalizálható a damage, és biztosítható, hogy egy karakter szinte azon nyomban halott legyen és így működjön az IT-úthenger.\par
 Az utolsó helyre Magmatrooper ajánlott, de helyettesíthető bármelyik másik IT-vel is.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \chapter{Ewok}
 \section{Mod Guide}
 \begin{center}
@@ -393,9 +475,9 @@ Az utolsó helyre Magmatrooper ajánlott, de helyettesíthető bármelyik másik
         Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
         \textbf{Chirpa} & CD+CC & CD & Top Sp & H/P & - & Sp 200\\
         &  &  &  &  &  & \\ \hline
-        \textbf{Wicket} & CD+CC & CD & Offense & H/P & Magas CC & Sp 220\\
+        \textbf{Wicket} & CD+CC & CD & Offense & H/P & Magas CC & Sp 220+\\
         &  &  &  &  & zetával & CC 70\%+\\ \hline
-        \textbf{Paploo} & Speed+HP & H/P & H/P & H/P & Leggyorsabb & Sp 220+\\
+        \textbf{Paploo} & Speed+HP & H/P & H/P & H/P & Leggyorsabb & Sp 230+\\
         &  &  &  &  & unique-al & \\ \hline
         \textbf{Logray} & Speed+ & H/P & Potency & H/P & Magas & Sp 210\\
         & Potency &  &  &  & Potency & Potency 100\%+\\ \hline
@@ -406,35 +488,36 @@ Az utolsó helyre Magmatrooper ajánlott, de helyettesíthető bármelyik másik
 \section{Team Synergy \textit{\&} Strategy}
 A kulcs a jó Ewok csapathoz az, hogy Paploo a Unique-jának köszönhetően (+25\% Speed) annyira gyors legyen amennyire csak lehetséges, és így el tudja indítani a szinte véget nem érő TM-traint. Fontos a CC az egész csapatton, hiszen Logray minden critical hit után kap 5\% TM-t. EE lecserélhető Scout-ra jobb eredményekkel, amennyiben legalább 2-3 zeta van a csapaton.
 
-\chapter{Separatist (GG Droid)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Utility Karakterek}
 \section{Mod Guide}
 \begin{center}
     \begin{tabular}{|l | l | l | l | l | l | l |}
         \hline
         Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{GG} & HP x 3 & CD & HP & HP & 6E HP & Sp 210\\
-        &  &  &  &  & modok & HP 55k+\\ \hline
-        \textbf{B1} & Speed+ & Offense & Offense & Top Sp/ & Nincs crit, H/P & Sp 260+\\
-        & Potency &  &  & Potency & nem számít & Gyorsabb mint GG\\ \hline
-        \textbf{B2} & Tenacity x 3 & Prot & Tenacity & Prot & Prot vagy Crit & H/P 90k+\\
-        &  &  &  &  & Avoidance Nyíl & Tenacity 100\%+\\ \hline
-        \textbf{Droideka} & Offense+HP & CD & Offense & Prot & Offense Nyíl & Kevés Speed\\
+        \textbf{Wampa} & CD+ & CD & Offense/ & P$>$H & - & Sp 210+\\
+        & Tenacity &  & Tenacity &  &  & Tenacity 100\%\\ \hline
+        \textbf{Nest} & Tenacity x 3 & CD & Tenacity & H$>$P & Lassú & Sp 200-\\
+        &  &  &  &  & magas Tenacity & Tenacity 130\%+\\ \hline
+        \textbf{CHS} & Speed+HP & HP & HP & H$>$P & Heal a max & SP 220+\\
+        &  &  &  &  & HP függvénye & \\ \hline
+        \textbf{Thrawn} & Speed & Top Sp & Top Sp & P$>$H & - & Sp 300+\\
         &  &  &  &  &  & \\ \hline
-        \textbf{IG-100} & Speed+HP & Prot & Prot & Prot & - & Sp 180\\
-        &  &  &  &  &  & H/P 100k\\ \hline
-        \textbf{Nute} & Speed+HP & H/P & H/P & P$>$H & - & Sp 260+\\
-        &  &  &  &  &  & H/P 100k\\ \hline
+        \textbf{Barris} & HP x 3 & 6E HP & 6E HP & 6E HP & 6E HP nyíl & HP 50k+\\
+        &  &  &  &  &  & \\ \hline
     \end{tabular}
 \end{center}
 \section{Team Synergy \textit{\&} Strategy}
-A GG droid team olyan szempontból egyedi, hogy gyakorlatilag a rengeteg assist és TM gain miatt szinte alig van szükségük Speed-re (ez alól B1 és Nute azért kivételek). Mint szinte minden csapatnak, itt is van egy aki a csapat "motorja", aki jelenleg nem más mint B2. Nála azonban Speed helyett az egyetlen szempont, hogy ne kerüljön rá daze, tehát a Tenacity-re kell igazán ügyelni, természetesen a H/P után.\par
-Nute a reworkje után egy roppant hasznos és még inkább idegesítőbb tagja a csapatnak. Vele felállva támadásban még a JKR teameket is verni lehet (ugyan egy kis szerencse nem árt, de amennyiben B1-re nem kerül azonnal Mark, a győzelem nem fog egy pillanatig sem kétségben forogni).
+Ezek a karakterek nem szerves részei egy csapatnak sem, ellenben stratégiai szempontból mégis rendkívül fontosak, és mindenképp javasolt őket az elsők között megfelelően modolni.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Utószó, Disclaimer}
 Lezárásként szeretném kijelenteni, hogy a dokumentumban található értékek és javaslatok PvP-re, és 5M+ GP-vel rendelkező accountokra lettek szabva. Emiatt kisebb méretű accounttal természetesen kevesebb, alacsonyabb értékek is elégségesek lehetnek, azonban a garantált hatás elérésének érdekében azok megközelítése erősen ajánlott.\par
 Fontos ugyanakkor kiemelni, hogy önmagában az, ha egy roster jól van modolva nem jelent egyenes utat a sikerhez, de legalább nem szórja az ember azt maga előtt rajzszegekkel, mint egy rosszul modolt account esetén.\\
 \\
-\textbf{Ez a dokumentum belsős MW (Mighty Wallets) dokumentumokon ésbizalmasan kezelendő információkon alapul. Korlátozott, belső használatra,terjesztés csak előzetes engedéllyel.}\\
+\textbf{Ez a dokumentum belsős MAW dokumentumokon és bizalmasan kezelendő információkon alapul. Korlátozott, belső használatra,terjesztés csak előzetes engedéllyel.}\\
 \\
-\LARGE\textcopyright DEADSH07 2019. június
+\LARGE\textcopyright DEADSH07 2019. augusztus
 \end{document}

@@ -13,18 +13,22 @@
 \titleformat{\chapter}[display]{\normalfont\bfseries}{}{0pt}{\Huge}
 \setlength{\parskip}{1em}
 \renewcommand{\baselinestretch}{1.15}
+\usepackage{booktabs}
+\newcolumntype{Y}{>{\arraybackslash}X}
 \usepackage{hyperref}
 \usepackage{graphics}
 \usepackage{tabularx}
 \usepackage{draftwatermark}
 \usepackage{hyperref}
+\usepackage{graphicx}
+\newcommand{\image}[1]{\includegraphics[width=0.75cm, height=0.75cm]{#1}}
 \SetWatermarkText{\textcopyright DEADSH07}
 \SetWatermarkScale{0.65}
 
 \author{DEADSH07}
 \title{PvP Masterclass\\[35pt]
 {\Huge Ultimate Modding \textit{\&} Teambuilding Guide}\\
-Version 1.2.0}
+Version 2.0.0}
 
 
 \begin{document}
@@ -33,17 +37,7 @@ Version 1.2.0}
 
 \tableofcontents
 
-\chapter{Bevezetés, Megjegyzések}
-\section{Disclaimer}
-Ez a dokument egy egyszerű, de ugyanakkor mégis átfogó képet igyekszik adni az egyes teamek modolásáról, TW-re és GA-ra. Egy adott karakter megfelelő modolása a kulcs a sikeres Player vs Player játékmódokban. Ugyan jobb modokkal rendelkezni ezt a sikerességet megkönnyíti, de ugyan akkor nem helyettesíti semmilyen mértékben a helyes modolást. Avagy... a speed sokat segít, de messze nem minden.\par
-Nyilvánvalóan minden szituációra nem lehet egyetlen megoldás a tökéletes,ez sem az. Ez a guide egy általánosított képet próbál adni, és helyenként teljesíthetetlen elvárásokat állíthat, ugyanis mint már említésre került, nem rendelkezik mindenki ugyan olyan minőségű és mennyiségű modokkal. \par
-A felsorolt csapatok és a hozzájuk rendelt karakterek csak a legáltalánosabb összeállításokat reprezentálják, nem helyettesítik a szükséges stratégiát vagy az esetleges extra karakterek szükségességét.\\
-\\
-\textbf{Ez a dokumentum belsős MAW dokumentumokon és bizalmasan kezelendő információkon alapul. Korlátozott, belső használatra, terjesztés csak előzetes engedéllyel.}\\
-\\
-\textcopyright DEADSH07 2019. augusztus
-
-\section{Jelölések jegyzéke}
+\chapter{Jelölések jegyzéke}
 \begin{center}
     \begin{tabularx}\textwidth{|X|X|}
         \hline
@@ -53,467 +47,526 @@ A felsorolt csapatok és a hozzájuk rendelt karakterek csak a legáltalánosabb
         H/P & Ekvivalens HP, HP+Protection együtt \\
         Prot & Protection \\
         Sp & Speed \\
-        Top Sp & Legjobb Speed \\ \hline
+        Top Sp & Legjobb Speed \\ 
+        Pot & Potency \\
+        Tena & Tenacity \\
+        Off & Offense \\\hline
     \end{tabularx}
 \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Change Log}
-Changes from revision 1.1.3:
+Changes from revision 1.2.0:
 \begin{itemize}
-    \item High tier teams changed to accomodate to higher relic levels
-    \item Marauder modding switched back to accomodate to high relics
-    \item GS added to 501st
+    \item Removed disclaimer and intro
+    \item Removed "Synergy and Strategy parts", replaced them with "Relic and Specifics"
+    \item Reorganized order based on team relevance
+    \item Thrawn added to Sith Triumvirate team
+    \item FOO added to FO team
+    \item Juhani removed from OR team
+    \item Shaak Ti moved to GR team
+    \item CHS and Thrawn removed from utility characters
+    \item Nute, Dooku and DDK added to utility characters
+    \item Minor tweaks in some numbers to accomodate to character development
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Darth Revan}
-\section{Mod Guide (High Relic)}
 \begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
+    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
         \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{Darth Revan} & Speed & Top Sp & Top Sp & P$>$H & - & Sp 330+\\ 
-        &  &  &  &  &  & H/P 100k\\ \hline
-        \textbf{BSF} & Speed & Top Sp & Top Sp & P$>$H & - & Sp 310+\\
-        &  &  &  &  &  & \\ \hline
-        \textbf{Darth Malak} & HP x 3 & Prot & Prot & Prot & - & Sp 300+\\
-        &  &  &  &  &  & H/P 250k\\ \hline
-        \textbf{HK-47} & Offense+CC & Offense & Offense & P$>$H & Offense  & Sp 220+\\
-        &  &  &  &  & Nyíl & Offense 10k+\\ \hline
-        \textbf{Marauder} & CD+HP & CD & Offense & Prot & - & Sp 240+\\
-        &  &  &  &  &  & Offense 7000+\\ \hline
-    \end{tabular}
+        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
+        \textbf{Darth Revan} & \image{speed.png} & Top Sp & Top Sp & P$>$H & Speed\\\hline
+        \textbf{BSF} & \image{speed.png} & Top Sp & Top Sp & HP & Speed\\\hline
+        \textbf{Darth Malak} & \image{health.png} x 3 & Prot & Prot & Prot & Speed\\\hline
+        \textbf{HK-47} & \image{offense.png},\image{cc.png} & Offense & Offense & P$>$H & Speed\\\hline
+        \textbf{Marauder} & \image{cd.png},\image{health.png} & CD & Offense & P$>$H & Speed\\\hline
+    \end{tabularx}    
 \end{center}
-\section{Team Synergy \textit{\&} Strategy}
-Kétség sem fér hozzá, a DR teamek jelenleg a legerősebb teamek a játékban. \par
-A csapat összeállításánál és modolásánál így igazából amire figyelni kell az az, hogy a nem mirror countereket a lehetőségekhez mérten legjobban eliminálni tudjuk.\par
-Ennek érdekében érdemes HK CC-jét annyira felnyomni, amennyire csak lehet, ugyanis ez nagyban hozzá tud járulni egy sikeres védekező csapathoz, hiszen az Assassination Protocol gyakorlatilag critical hit esetén insta kill. 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\chapter{Separatist (GG Droid)}
-\section{Mod Guide (High Relic)}
+\section*{Csapat Relicezésének ajánlottsága:}
 \begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
-        \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{GG} & HP x 3 & CD & HP & HP & 6E HP & Sp 220+\\
-        &  &  &  &  & modok & HP 150k+\\ \hline
-        \textbf{B1} & Speed+ & Offense & Offense & Top Sp/ & Nincs crit, H/P & Sp 290+\\
-        & Potency &  &  & Potency & nem számít & Offense 7000+\\ \hline
-        \textbf{B2} & Tenacity x 3 & Prot & Potency & Prot & Crit Avoidance & Potency 100\%+\\
-        &  &  &  &  & Nyíl & Tenacity 100\%+\\ \hline
-        \textbf{IG-100} & Defense+HP & Prot & Prot & Prot & - & Sp 200+\\
-        &  &  &  &  &  & H/P 150k+\\ \hline
-        \textbf{Nute} & Speed+HP & H/P & H/P & P$>$H & - & Sp 290+\\
-        &  &  &  &  &  & \\ \hline
-        \textbf{Wat} & Speed+HP & HP & HP & HP & - & Sp 300+\\
-        &  &  &  &  &  & \\ \hline        
-    \end{tabular}
+    $7.5/10$
 \end{center}
-\section{Team Synergy \textit{\&} Strategy}
-A G13-as korszakban a GG droid/separatist team egyértelműen a második erőnek lépett elő védelem tekintetében. A csapat legfontosabb láncszeme és motorja B2, ő az, aki ha túl tud élni elég ideig, szinte akármilyen ellenfél ellen van esélye sikeresen védekezni.\par
-Wat Tambor illetve Nute Gunray két egészen különböző countereket provokáló utolsó láncszem a csapatba. Egy gyors Wat/Nute illetve egy gyors B1 droiddal a GG team egy félelmetes ellenfél.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\chapter{Jedi Knight Revan}
-\section{Mod Guide (High Relic)}
-\begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
-        \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{JKR} & Speed & CD/Top Sp & Offense/Top Sp & P$>$H & - & Sp: képlet\\ 
-        &  &  &  &  &  & H/P 70k\\ \hline
-        \textbf{Bastila} & Speed & Top Sp & Top Sp & P$>$H & - & Sp 285+\\
-        &  &  &  &  &  & \\ \hline        
-        \textbf{Jolee} & Tenacity x 3 & Tenacity & Prot & P$>$H & CritAvoidance & Sp 210+\\
-        &  &  &  &  & Nyíl & Tenacity 140\%+\\ \hline
-        \textbf{JKA} & CD+CC & CD & Offense & P$>$H & - & Sp: képlet\\
-        &  &  &  &  &  & Offense 8500+\\ \hline
-        \textbf{Hoda} & Speed & H/P & H/P & P$>$H & - & JKR+1\\
-        &  &  &  &  &  &  \\ \hline
-    \end{tabular}
-\end{center}
-\section{Team Synergy \textit{\&} Strategy}
-A fent leírt JKR team a jelnegi legbiztosabb DR counter a játékban. Anakinnal felállva gyakorlatilag elkerülhetetlen az, hogy legalább 3 karakter a Sith Empire teamből ne haljon meg a csata végére.\\
-A sebességek kiszámításához szükséges képletek:\\
-Legyőzhető leggyorsabb DR team:
-\begin{equation}
-    Baseline=\frac{(Bastila+40)}{0.95}-1
-\end{equation}
-JKR Speed:
-\begin{equation}
-    JKR=Baseline-39
-\end{equation}
-Anakin Speed
-\begin{equation}
-    Anakin=((JKR+40)*0.89)-40
-\end{equation}
-\href{https://youtu.be/IH_Xo9CuSho}{Gameplay és magyarázat}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\chapter{Galactic Republic}
-\section{Mod Guide}
-\begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
-        \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{Padmé} & HP x 3 & HP & HP & HP & - & Sp 290+\\ 
-        &  &  &  &  &  & HP 60k+\\ \hline
-        \textbf{GK} & HP x 3 & H$>$P & H$>$P & H$>$P & - & 250+\\
-        &  &  &  &  &  & H/P 100k+\\ \hline        
-        \textbf{GMY} & Offense + & CD & Offense & H$>$P & Minél több offense & Sp 290+\\
-        & CC/HP &  &  &  & Leggyorsabb & \\ \hline
-        \textbf{Ahsoka} & CD + CC/HP & CD & HP & HP & - & Sp 200+\\
-        &  &  &  &  &  & \\ \hline
-        \textbf{C-3PO} & Speed & H/P & Potency & H/P & - & Sp 260+\\
-        &  &  &  &  &  & \\ \hline        
-    \end{tabular}
-\end{center}
-\section{Team Synergy \textit{\&} Strategy}
-A Galactic Republic team támadásban rendkívül sokoldalú, gyakorlatilag a legjobb DR teamek kivételével mindent meg lehet velük verni, védekezésben pedig egy rendkívül kellemetlen ellenfél elég kevés igazi counterrel, ráadásul igen nehezen grind-olható.\par
-A GG illetve NS teamek countereléséhez fontos, hogy GMY legyen a csapatban a leggyorsabb karakter, és kezdeni tudjon a foresight+tenacity up kombóval.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\chapter{Geonosians}
-\section{Mod Guide}
-\begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
-        \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{Brood} & Speed & Top Sp & Top Sp & P$>$H & - & Sp 290+\\
-        \textbf{Alpha} &  &  &  &  &  & \\ \hline
-        \textbf{Soldier} & CC x 3 & CD/CC & Offense & P$>$H & - & Sp 240+\\
-        &  &  &  &  &  & CC 100\%+\\ \hline
-        \textbf{Spy} & CD + CC & CD & Offense & P$>$H & - & Sp 210+\\
-        &  &  &  &  &  & \\ \hline
-        \textbf{Sun Fac} & Tenacity $>$ & Prot & Tenacity & P$>$H & - & Sp 190+\\
-        & HP &  &  &  &  & \\ \hline
-        \textbf{Poggle} & Potency x 3 & H/P & Potency & P$>$H & - & Sp 220+\\
-        &  &  &  &  &  & \\ \hline
-    \end{tabular}
-\end{center}
-\section{Team Synergy \textit{\&} Strategy}
-A geonosian team Brood Alpha érkezésével egy teljesen jelentéktelen teamből egy top PvP csapattá lépett elő. A hive mind és az elképesztő mennyiségű assist miatt a geo csapat rendkívül kevés counterrel rendelkezik, és pár kivétellel a legjobb meta teamek ellen is jó esélyekkel veszi fel a küzdelmet támadásban.\par
-Mivel Brood Alpha adja meg a "kezdő lökést", neki kell leggyorsabbnak lennie, ezután pedig egy 100\%+ CC-vel rendelkező Soldier tartja mozgásban a csapatot.
+\section*{Specifics}
+\begin{tabularx}\textwidth{l l l}
+    \textbf{DR} & Speed 330+ & H/P 100k+\\ \\[-1em]
+    \textbf{BSF} & Speed 310+ & HP 90k+\\ \\[-1em]
+    \textbf{Malak} & Speed 300+ & H/P 250k+\\ \\[-1em]
+    \textbf{HK} & Speed 220+ & Offense 10.000+\\ \\[-1em]
+    \textbf{Marauder} & Speed 250+ & Offense 7000+\\ \\[-1em]
+\end{tabularx} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{501st}
-\section{Mod Guide (High Relic)}
 \begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
+    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
         \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{General} & CD + & CD & Offense & P$>$H & Prot nyíl & Sp 240+\\
-        \textbf{Skywalker} & HP/Def &  &  &  &  & H/P 200k+\\ \hline        
-        \textbf{Rex} & Speed + HP & HP & HP & H$>$P & - & Sp 280+\\
-        &  &  &  &  &  & \\ \hline
-        \textbf{Fives} & HP/Defense & HP & HP & H$>$P & - & SP 200+\\
-        &  &  &  &  &  & HP 70k+\\ \hline
-        \textbf{Echo} & CD + CC & CD & Offense & H$>$P & - & Sp 220+\\
-        &  &  &  &  &  & Offense 7000+\\ \hline
-        \textbf{Shaak Ti} & Speed + HP& H/P & H/P & P$>$H & - & Sp 300+\\
-        &  &  &  &  &  & \\ \hline
-    \end{tabular}
+        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
+        \textbf{GAS} & \image{offense.png},\image{health.png}/\image{defense.png} & CD/Prot & Prot & Prot & Prot\\\hline  
+        \textbf{Rex} & \image{speed.png} , \image{health.png} & HP & HP & HP & Speed\\\hline
+        \textbf{Fives} & \image{health.png} / \image{defense.png} & Prot & Prot & Prot & Prot\\\hline        
+        \textbf{Echo} & \image{cd.png} , \image{cc.png} & CD & Offense & Prot & Offense\\\hline    
+        \textbf{ARC} & \image{offense.png} , \image{cc.png} & Offense & Prot & Prot & Speed\\\hline 
+    \end{tabularx}
 \end{center}
-\section{Team Synergy \textit{\&} Strategy}
-General Skywalker (GS) érkezésével az 501-es team egésen új szintre lépett erősség szempontjából. A fent említett modolás CSAK 7*, magas relic szintre értendő. Alacsonyabb csillag és gear esetén 3 x HP, és mindenhol protection primary ajánlott.
+\section*{Csapat Relicezésének ajánlottsága:}
+\begin{center}
+    $10/10$
+\end{center}
+\section*{Specifics}
+\begin{tabularx}\textwidth{l l l}
+    \textbf{GAS} & Speed 260+ & H/P 180k+\\ \\[-1em]
+    \textbf{Rex} & Speed 300+&\\ \\[-1em]
+    \textbf{Fives} & Speed 200+ & H/P 170k+\\ \\[-1em]
+    \textbf{Echo} & Speed 200+ & Special Offense 10.000+\\ \\[-1em]
+    \textbf{ARC} & Speed 270+ & Offense 10.000+\\ \\[-1em]
+\end{tabularx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Separatist (GG Droid)}
+\begin{center}
+    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
+        \hline
+        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
+        \textbf{GG} & \image{health.png} x 3 & HP & HP & HP & HP\\\hline
+        \textbf{B1} & \image{offense.png} & Offense & Offense & Top Sp & Speed\\\hline
+        \textbf{B2} & \image{tenacity.png} , \image{potency.png} & Prot & Potency & Prot & Prot\\\hline
+        \textbf{IG-100} & \image{defense.png} , \image{health.png} & Prot & Prot & Prot &Speed\\\hline
+        \textbf{Wat} & \image{speed.png} , \image{health.png} & HP & HP & HP & Speed\\\hline
+    \end{tabularx}
+\end{center}
+\section*{Csapat Relicezésének ajánlottsága:}
+\begin{center}
+    $7/10$
+\end{center}
+\section*{Specifics}
+\begin{tabularx}\textwidth{l l l l}
+    \textbf{GG} & Speed 230+ & HP 150k+&\\ \\[-1em]
+    \textbf{B1} & Speed 290+ & Offense 10.000+&\\ \\[-1em]
+    \textbf{B2} & Tenacity 100\%+ & Potency 100\%+ & H/P 160k+\\ \\[-1em]
+    \textbf{Magna} & Speed 200+ & H/P 150k+&\\ \\[-1em]
+    \textbf{Wat} & Speed 300+ & H/P 150k+&\\ \\[-1em]
+\end{tabularx}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Jedi Knight Revan}
+\begin{center}
+    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
+        \hline
+        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
+        \textbf{JKR} & \image{speed.png} & CD/Top Sp & Off/Top Sp & P$>$H & Speed\\\hline
+        \textbf{Bastila} & \image{speed.png} & Top Sp & Top Sp & P$>$H & Speed\\\hline
+        \textbf{Jolee} & \image{tenacity.png} x 3 & Tenacity & Prot & P$>$H & CritAvoid\\\hline
+        \textbf{JKA} & \image{cd.png} , \image{cc.png} & CD & Offense & P$>$H & Speed/Off\\\hline
+        \textbf{Hoda} & \image{speed.png} & H/P & H/P & P$>$H & Speed\\\hline
+    \end{tabularx}
+\end{center}
+\section*{Csapat Relicezésének ajánlottsága:}
+\begin{center}
+    $6/10$
+\end{center}
+\section*{Specifics}
+\begin{equation}
+    Baseline=\frac{(Bastila+40)}{0.95}-1
+\end{equation}
+
+\begin{tabularx}\textwidth{l l l l}
+    \textbf{JKR} & Speed $Baseline-39$ & H/P 90k+ &\\ \\[-1em]
+    \textbf{Bastila} & Speed 285+ &&\\ \\[-1em]
+    \textbf{Jolee} & Speed 210+ & Tenacity 140\%+ & H/P 110k+\\ \\[-1em]
+    \textbf{JKA} & Speed $((JKR+40)*0.89)-40$ & Offense 8.500+&\\ \\[-1em]
+    \textbf{Hoda} & Speed JKR+1&&\\
+\end{tabularx}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Galactic Republic}
+\begin{center}
+    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
+        \hline
+        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
+        \textbf{Padmé} & \image{health.png} x 3 & HP & HP & HP & Speed\\\hline
+        \textbf{GK} & \image{health.png} x 3 & HP & HP & HP & Speed\\\hline
+        \textbf{GMY} & \image{speed.png} , \image{health.png} & CD/HP & HP & HP & Speed\\\hline
+        \textbf{Ahsoka} & \image{health.png} x 3 & HP/CD & HP & HP & HP\\\hline
+        \textbf{C-3PO} & \image{speed.png}, \image{health.png} & HP & Potency/HP & HP & Speed\\\hline
+        \textbf{Shaak Ti} & \image{speed.png}, \image{health.png} & HP & HP & HP & Speed\\\hline
+    \end{tabularx}
+\end{center}
+\section*{Csapat Relicezésének ajánlottsága:}
+\begin{center}
+    $8.5/10$
+\end{center}
+\section*{Specifics}
+\begin{tabularx}\textwidth{l l l l}
+    \textbf{Padmé} & Speed 290+ & HP 80k+ &\\ \\[-1em]    
+    \textbf{GK} & Speed 250+ & HP 90k+ &\\ \\[-1em]
+    \textbf{GMY} & Speed 295+ & HP 50k+ &\\ \\[-1em]
+    \textbf{Ahsoka} & Speed 200+ & HP 70k+ &\\ \\[-1em]
+    \textbf{C-3PO} & Speed 260+ & HP 70k+ & Potency 90\%+\\ \\[-1em]
+    \textbf{Shaak Ti} & Speed 300+ & HP 50k+ &\\
+\end{tabularx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Geonosians}
+\begin{center}
+    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
+        \hline
+        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
+        \textbf{Brood Alpha} & \image{speed.png} , \image{tenacity.png} & Top Sp & Top Sp & P$>$H & Speed\\\hline
+        \textbf{Soldier} & \image{cc.png} x 3 & CD/CC & Offense & P$>$H & Speed\\\hline
+        \textbf{Spy} & \image{cd.png} , \image{cc.png} & CD & Offense & P$>$H & Speed\\\hline
+        \textbf{Sun Fac} & \image{health.png} , \image{tenacity.png} & Prot & Prot & Prot & Speed\\\hline
+        \textbf{Poggle} & \image{speed.png} , \image{potency.png} & H/P & Potency & P$>$H & Speed\\\hline        
+    \end{tabularx}
+\end{center}
+\section*{Csapat Relicezésének ajánlottsága:}
+\begin{center}
+    $5.5/10$
+\end{center}
+\section*{Specifics}
+\begin{tabularx}\textwidth{l l l l}
+    \textbf{Brood Alpha} & Speed 290+ & H/P 160k+ &\\ \\[-1em]    
+    \textbf{Soldier} & Speed 240+ & Offense 5.000+ & CC 100\%+\\ \\[-1em]
+    \textbf{Spy} & Speed 210+ & Offense 5.000+ &\\ \\[-1em]
+    \textbf{Sun Fac} & Speed 200+ & H/P 150k+ & Tenacity 100\%+\\ \\[-1em]
+    \textbf{Poggle} & Speed 270+ & H/P 80k+ & Potency 100\%+\\
+\end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Sith Triumvirate}
-\section{Mod Guide}
 \begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
+    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
         \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{Traya} & HP/ & H/P & H/P & P$>$H & - & Sp 270+\\
-        &  &  &  &  &  & H/P 120k+ \\ \hline
-        \textbf{Darth} & Speed+HP & H$>$P & H$>$P & H$>$P & - & Sp 240+\\
-        \textbf{Nihilus} &  &  &  &  &  & \\ \hline
-        \textbf{Darth} & Speed+HP & Prot$>$CD & Prot & Prot & - & Sp Traya +8\\
-        \textbf{Sion} &  &  &  &  &  & H/P 130k\\ \hline
-        \textbf{Sith} & HP/ & Prot & Prot & Prot & - & H/P 110k+\\
-        \textbf{Trooper} & Defense &  &  &  &  & \\ \hline              
-    \end{tabular}
+        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
+        \textbf{Traya} & \image{speed.png} , \image{health.png} & H/P & H/P & H/P & Speed\\\hline
+        \textbf{Nihilus} & \image{speed.png} , \image{health.png} & HP & HP & HP & Speed\\\hline
+        \textbf{Sion} & \image{speed.png} , \image{health.png} & H/P & H/P & H/P & Speed\\\hline
+        \textbf{Sith Trooper} & \image{health.png} , \image{defense.png} & Prot & Prot & Prot & Prot\\\hline
+        \textbf{Thrawn} & \image{speed.png} & H/P & H/P & H/P & Speed\\\hline
+    \end{tabularx}
 \end{center}
-\section{Team Synergy \textit{\&} Strategy}
-Az apró mélyrepülésükből relevancia terén a Sith Triumvirate team ismét az egyik legértékesebb, legfontosabb és leginkább kimeríthető counterré lépett elő. Ez főképpen annak köszönhető, hogy 3 top tier védekező csapat, a Geonosisiak, az 501-es klónok, valamint a GR teamek ellen is kiváló ellenszer.\par
-Ezen túl pedig, EP lead alatt, Thrawn-t a csapatba ékelve az amúgy szinte tisztán verhetetlen GG+Wat teamek ellen is messze a legjobb counternek bizonyulnak. Mivel messze ez a legnehezebben verhető csapat a többi közül, a modolás is erre lett optimalizálva a trio esetén (SiT maradt a régi)
+\section*{Csapat Relicezésének ajánlottsága:}
+\begin{center}
+    $3.5/10$
+\end{center}
+\section*{Specifics}
+\begin{tabularx}\textwidth{l l l}
+    \textbf{Traya} & Speed 270+ & H/P 120k+\\ \\[-1em]    
+    \textbf{Nihilus} & Speed 250+ & H/P 110k+\\ \\[-1em]
+    \textbf{Sion} & \textbf{Traya + 8} & H/P 140k+\\ \\[-1em]
+    \textbf{Sith Trooper} & H/P 120k+ &\\ \\[-1em]
+    \textbf{Thrawn} & Speed 300+ & H/P 100k+\\
+\end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Rebel (CLS)}
-\section{Mod Guide (High Relic)}
 \begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
+    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
         \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{CLS} & CD + CC & CD & Offense & H/P & Damage $>$ Speed & Sp 270+\\
-        &  &  &  &  &  & Offense 6000+\\ \hline
-        \textbf{Han} & CD + CC & CD & Offense & H/P & Damage $>$ Speed & Sp 200+\\
-        &  &  &  &  &  & Offense 8000+\\ \hline
-        \textbf{Chewie} & Offense + CC & CD & Offense & H/P & Damage $>$ Speed & Sp 240+\\ 
-        &  &  &  &  &  & Offense 8000+\\ \hline
-        \textbf{Chirrut} & HP x 3 & Prot & Prot & P$>$H & Több H/P mint CLS-nek & Sp 240+\\
-        &  &  &  &  &  & \\ \hline
-        \textbf{Baze} & HP x 3 & H/P & H/P & H/P & Akár Prot Nyíl & H/P 110+\\
-        &  &  &  &  &  & \\ \hline
-    \end{tabular}
+        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
+        \textbf{CLS} & \image{cd.png} , \image{cc.png} & CD & Offense & P$>$H & Speed\\\hline
+        \textbf{Han} & \image{cd.png} , \image{cc.png} & CD & Offense & P$>$H & Offense\\\hline
+        \textbf{Chewie} & \image{offense.png},\image{cc.png}/\image{tenacity.png} & CD & Offense/Tena & P$>$H & Speed\\\hline
+        \textbf{Old Ben} & \image{speed.png} , \image{health.png} & Prot & Prot & Prot & Speed\\\hline
+    \end{tabularx}
 \end{center}
-\section{Team Synergy \textit{\&} Strategy}
-A legfontosabb a CLS 3.0 csapatnál az, hogy a guard mindenképp CLS-re kerüljön. Emiatt Chirrut modolása különösen fontos, ha neki nincs elég H/P-ja, akkor rá fog kerülni a guard, ami mindenképp kerülendő.\par
-G13 és a relic-ek miatti nagy HP növekedés miatt Chirrut helyettesítése a csapatban erősen ajánlott egy olyan tank-ra, aki nem lopja el a guard-ot CLS-ről.
+\section*{Csapat Relicezésének ajánlottsága:}
+\begin{center}
+    $7/10$
+\end{center}
+\section*{Specifics}
+\begin{tabularx}\textwidth{l l l}
+    \textbf{CLS} & Speed 275+ & Offense 6.500+\\ \\[-1em]    
+    \textbf{Han} & Speed 200+ & Offense 8.500+\\ \\[-1em]
+    \textbf{Chewie} & Speed 250+ & Offense 8.000+ / Tenacity 125\%+\\ \\[-1em]
+    \textbf{Old Ben} & Speed 240+ & H/P 130k+\\
+\end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Nightsister}
-\section{Mod Guide}
 \begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
+    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
         \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{Ventress} & CD + HP/ & CD & Offense & HP & Speed annyira & Sp 210+\\
-        & Potency &  &  &  &  nem fontos & Offense 3500+\\ \hline
-        \textbf{Talzin} & Offense+ & CD/ & Offense/ & HP & - & Sp.Offense 7500+\\
-        & CC & Offense & Potency &  &  & Sp 240+, Potency 70\%+\\ \hline
-        \textbf{Daka} & Speed+HP/ & HP & Potency & HP & Második & Sp 280+\\
-        & Potency &  &  &  & leggyorsabb & Potency 80\%+\\ \hline
-        \textbf{Zombie} & HP x 3 & 6E HP & 6E HP & 6E HP & - & Sp 240+\\
-        &  &  &  &  &  & Health 60k\\ \hline
-        \textbf{Spirit} & Speed+CC & CD & Offense/ & Health & Leggyorsabb & Sp 290+\\
-        &  &  & Potency &  &  & \\ \hline
-    \end{tabular}
+        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
+        \textbf{Ventress} & \image{cd.png} , \image{health.png} & CD & Offense & HP & Speed\\\hline
+        \textbf{Talzin} & \image{offense.png} , \image{potency.png} & CD/Offense & Offense & HP & Speed\\\hline
+        \textbf{Daka} & \image{health.png} , \image{speed.png} & HP & HP & HP & Speed\\\hline
+        \textbf{Zombie} & \image{health.png} x 3 & HP & HP & HP & Speed\\\hline
+        \textbf{Spirit} & \image{speed.png}/\image{offense.png},\image{cc.png} & CD & Offense & HP & Speed\\\hline
+    \end{tabularx}
 \end{center}
-\section{Team Synergy \textit{\&} Strategy}
-A Nightsister csapat megfelelően modolva még mindig az egyik legerősebb védekező csapat. Ehhez kulcs, hogy Spirit és Daka legyenek olyan gyorsak amennyire csak lehet, hogy pár Stun-nal az elején lépéselőnybe kerüljön a csapat.\par
-Fontos, hogy védekezéshez mindig AV lead használatos. MT leaddel az AI messze messze nem bánik olyan jól a kicsit speciális mechanikák miatt.\par
-Támadáshoz a csapat kicsit variálható, Spirit hiányában lehet helyette mást is használni, de a teljes potenciál eléréséhez elengedhetetlen a fent említett ötös.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\chapter{Resistance (JTR)}
-\section{Mod Guide}
+\section*{Csapat Relicezésének ajánlottsága:}
 \begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
-        \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{JTR} & CD+CC/ & CD & Potency/ & P$>$H & Potency $>$ Offense & Sp 240+\\
-        & Potency &  & Offense &  &  & \\ \hline
-        \textbf{BB-8} & Speed & H/P & H/P & H/P & - & Sp 290+\\
-        &  & Top Sp & Top Sp &  &  & \\ \hline
-        \textbf{R2-D2} & Speed+CC & CC/Prot & Potency/ & H/P & CC segít expose-t & Sp 280+\\
-        &  &  & Prot &  & felrakni & \\ \hline
-        \textbf{RT} & CD + CC & CD & Offense & P$>$H & Offense & Offense 3500+\\
-        &  &  &  &  & Nyíl & \\ \hline
-        \textbf{Finn} & CD + CC & CD & Offense & P$>$H & - & Sp 190+\\
-        &  &  &  &  &  & \\ \hline   
-    \end{tabular}
+    $5.5/10$
 \end{center}
-\section{Team Synergy \textit{\&} Strategy}
-Az egyre több erős team megjelenésével a JTR teamek jelentősége egyre kisebb és kisebb, ugyanakkor GA-ra még mindig egy jelentős támadó erőt képviselnek. A két droidot továbbra is érdemes gyorsan tartani, hiszen ők azok, akik a teamet indítják, és BB-8 az, aki mozgásban is tartja őket.\par
-Finn helyettesíthető mással is, de a reworkje után ajánlatos őt használni.
+\section*{Specifics}
+\begin{tabularx}\textwidth{l l l l}
+    \textbf{Ventress} & Speed 220+ & Offense 4.500+ & HP 50k+\\ \\[-1em]    
+    \textbf{Talzin} & Speed 240+ & Special Offense 9.500+ & HP 60k+\\ \\[-1em]
+    \textbf{Daka} & Speed 280+ & HP 100k+ &\\ \\[-1em]
+    \textbf{Zombie} & Speed 240+ & HP 100k+ &\\ \\[-1em]
+    \textbf{Spirit} & Speed 290+ & Offense 6.500+ & HP 45k+\\
+\end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Bounty Hunter}
-\section{Mod Guide}
-    \begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
+\begin{center}
+    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
         \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{Bossk} & Speed+ & Prot & Tenacity & Prot & - & Sp 290+\\
-        & Tenacity &  &  &  &  & Tenacity 100\%\\ \hline
-        \textbf{Jango} & Speed+Potency/ & CD & Offense/ & P$>$H & Lead: speed set & Sp   270+\\
-        & CD+CC &  & Prot &  & Bossk l: CD+CC & Potency 70\%+\\ \hline
-        \textbf{Dengar} & Speed+CC & H/P/CC & Prot/ & P$>$H & - & Sp 200+, CC 50\%+\\
-        &  &  & Potency &  &  & Potency 60\%+\\ \hline
-        \textbf{Boba} & CD+CC & CD & Offense & P$>$H & -  & Sp 240+\\
-        &  &  &  &  &  & CC 50\%+\\ \hline
-        \textbf{Embo} & CD+CC & CD & Offense & P$>$H & - & Sp 220+\\
-        &  &  &  &  &  & \\ \hline
-        \textbf{Zam} & Speed+ & Top Sp & Offense/ & P$>$H & - & Sp 280+\\
-        & Potency &  & Top Sp &  &  & \\ \hline
-        
-    \end{tabular}
+        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
+        \textbf{Jango} & \image{cd.png} , \image{cc.png} & CD & Offense & P$>$H & Speed\\\hline
+        \textbf{Bossk} & \image{speed.png} , \image{tenacity.png} & Prot & Tenacity & Prot & Speed\\\hline
+        \textbf{Boba} & \image{speed.png} , \image{potency.png} & CD & Off/Potency & P$>$H & Speed\\\hline
+        \textbf{Zam} & \image{speed.png} , \image{potency.png} & Top Sp & Potency & P$>$H & Speed\\\hline
+        \textbf{Dengar} & \image{speed.png} , \image{cc.png} & H/P/CC & Potency/Prot & P$>$H & Speed\\\hline
+    \end{tabularx}
 \end{center}
-\section{Team Synergy \textit{\&} Strategy}
-Ennél a csapatnál különösen fontos hogy gyorsak legyenek a kulcs karakterek (Bossk és/vagy Jango) hogy a rettentő olcsó IT countert meg tudják akadályozni.\par
-Mind a két leader életképes, kicsit más ellen erősebbek védekezésben. Az alap kvartett mindig ugyan az, Bossk-Jango-Boba-Dengar. Az ötödik leadertől függően vagy egy ötödik BH, vagy pedig valamilyen utility karakter.\par
-Jango lead alatt érdemes kihasználni azt, hogy Zam amúgy is gyors, és a leadtől még gyorsabb, valamint hogy a bombái nem mennek át tenacity/potency checken. Bossk lead alatt ellenben érdemes Embo-t használni, mivel alapvetően egy sokkal erősebb karakter.
+\section*{Csapat Relicezésének ajánlottsága:}
+\begin{center}
+    $5/10$
+\end{center}
+\section*{Specifics}
+\begin{tabularx}\textwidth{l l l l}
+    \textbf{Jango} & Speed 300+ & Offense 5.000+ &\\ \\[-1em]    
+    \textbf{Bossk} & Speed 305+ & H/P 130k+ & Tenacity 100\%+\\ \\[-1em]
+    \textbf{Boba} & Jango -1 & Offense 4.500+ & Potency 100\%+\\ \\[-1em]
+    \textbf{Zam} & Speed 310+ & Potency 100\%+ &\\ \\[-1em]
+    \textbf{Dengar} & Speed 200+ & CC 50\%+ & Potency 60\%+\\
+\end{tabularx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Resistance (JTR)}
+\begin{center}
+    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
+        \hline
+        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
+        \textbf{JTR} & \image{cd.png},\image{cc.png}/\image{potency.png} & CD & Off/Potency & P$>$H & Speed\\\hline
+        \textbf{BB-8} & \image{speed.png} & H/P & H/P & P$>$H & Speed\\\hline
+        \textbf{R2-D2} & \image{speed.png} , \image{health.png} & HP & HP & HP & Speed\\\hline
+        \textbf{RT} & \image{cd.png} , \image{cc.png} & CD & Offense & P$>$H & Offense\\\hline
+        \textbf{Finn} & \image{cd.png} , \image{cc.png} & CD & Offense & P$>$H & Speed\\\hline
+    \end{tabularx}
+\end{center}
+\section*{Csapat Relicezésének ajánlottsága:}
+\begin{center}
+    $2.5/10$
+\end{center}
+\section*{Specifics}
+\begin{tabularx}\textwidth{l l l}
+    \textbf{JTR} & Speed 240+ &\\ \\[-1em]    
+    \textbf{BB-8} & Speed 290+ &\\ \\[-1em]
+    \textbf{R2-D2} & Speed 280+ & HP 65k+\\ \\[-1em]
+    \textbf{RT} & Offense 3.500+ &\\ \\[-1em]
+    \textbf{Finn} & Speed 290+ & Offense 2.500+\\
+\end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Empire}
-\section{Mod Guide}
 \begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
+    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
         \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{Palpatine} & Speed+ & Prot & Prot/ & H/P & Magas & Sp 260+\\
-        & Potency &  & Potency &  & Potency & Potency 90\%+\\ \hline
-        \textbf{Vader} & Speed+ & CD & Potency/ & H/P & Leggyorsabb & Sp 270+\\
-        & Potency &  & Offense &  & bónusszal & \\ \hline
-        \textbf{Tarkin} & Speed+ & Prot/CD & Potency & H/P & - & Sp 250+\\
-        & Potency &  &  &  &  & Potency 80\%+\\ \hline
-        \textbf{Shore} & HP x 3 & H/P & H/P & H/P & - & Sp 200+\\
-        &  &  &  &  &  & H/P 90k+\\ \hline
-        \textbf{DT} & CD + CC & CD & Offense & H/P & - & Sp 220+\\
-        &  &  &  &  &  & \\ \hline
-    \end{tabular}
+        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
+        \textbf{Palpatine} & \image{speed.png} , \image{potency.png} & Off/Prot & Off/Potency & P$>$H & Speed\\\hline
+        \textbf{Vader} & \image{speed.png} , \image{potency.png} & CD/Offense & Off/Potency & P$>$H & Speed\\\hline
+        \textbf{Tarkin} & \image{speed.png} , \image{potency.png} & Off/Prot & Potency & P$>$H & Speed\\\hline
+        \textbf{Shore} & \image{health.png} x 3 & H/P & H/P & P$>$H & Speed\\\hline
+        \textbf{DT} & \image{cd.png} , \image{cc.png} & CD & Offense & P$>$H & Speed\\\hline
+    \end{tabularx}
 \end{center}
-\section{Team Synergy \textit{\&} Strategy}
-A Palpatine lead empire csapat rendkívül erősen támaszkodik debuffokra, így számukra a potency nagyon fontos. A csapat motorja Vader, akinek fontos, hogy a saber-throw-al elég TM-t adjon a csapatnak a kezdéshez.\par
-Mivel a csapat elsődleges célpontja a NS teamek, és mivel egyre többen kezdik megfelelően gyorsra modolni a lányokat, így fontos, hogy Vader kerüljön olyan közel a 270-es határhoz, amennyire csak lehet, hogy meg tudja előzni a leggyorsabb NS teamet is. Ezen felül fontos, hogy a csapat többi tagja, első sorban Palpatine és Tarkin is 250 felett legyen, hogy biztosítva legyen az, hogy ők is az ellenfél NS team előtt jönnek.
+\section*{Csapat Relicezésének ajánlottsága:}
+\begin{center}
+    $2.5/10$
+\end{center}
+\section*{Specifics}
+\begin{tabularx}\textwidth{l l l}
+    \textbf{Palpatine} & Speed 260+ & Potency 90\%+\\ \\[-1em]    
+    \textbf{Vader} & Speed 270+ &\\ \\[-1em]
+    \textbf{Tarkin} & Speed 250+ & Potency 80\%+\\ \\[-1em]
+    \textbf{Shore} & Speed 210+ & H/P 90k+\\ \\[-1em]
+    \textbf{DT} & Speed 220+ &\\
+\end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{First Order}
-\section{Mod Guide}
 \begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
+    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
         \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{KRU} & HP x 3/ & 6E HP & 6E HP & 6E HP & - & Sp 210+\\
-        & HP(2)+Defense &  &  &  &  & HP 60k+\\ \hline
-        \textbf{Kylo} & Speed+H/P & CD/HP & Offense/ & H$>$P & Leggyorsabb & Sp 260+\\
-        &  &  & H/P &  &  & \\ \hline
-        \textbf{FOX} & CD+HP & CD & HP & HP & - & Sp 170+\\
-        &  &  &  &  &  & \\ \hline
-        \textbf{FOST} & Speed+Tenacity/ & H/P & Tenacity & P$>$H & - & Sp 210+ H/P 70k+\\
-        & Tenacity x 3 &  &  &  &  & Tenacity 100\%+\\ \hline
-    \end{tabular}
+        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
+        \textbf{KRU} & \image{health.png} , \image{defense.png} & HP & HP & HP & Speed\\\hline
+        \textbf{Kylo} & \image{speed.png} , \image{health.png} & CD/H/P & Off/H/P & P$>$H & Speed\\\hline
+        \textbf{FOX} & \image{cd.png} , \image{health.png} & CD & HP & HP & Speed\\\hline
+        \textbf{FOST} & \image{health.png} , \image{tenacity.png} & H/P & H/P/Tena & P$>$H & Speed\\\hline
+        \textbf{FOO} & \image{speed.png} & H/P & H/P/Potency & P$>$H & Speed\\\hline
+    \end{tabularx}
 \end{center}
-\section{Team Synergy \textit{\&} Strategy}
-A jól modolt First Order team hasonlóan a BH-hoz egy elképesztően erős fegyver lehet mind defensen, mind pedig támadásban. A kulcs ahhoz, hogy a csapat hatékony legyen az, hogy kihasználjuk KRU unique-ját, aminek köszönhetően minden sebzés után HP-t nyer vissza. Ha 60k fölé sikerül tornázni ezt az értéket, nem megfelelő team napestig üthetné, ugyanis egész egyszerűen csak healelnék sebzés helyett.\par
-Az utolsó hely a teamen flexibilis, akár egy utility karakter, akár egy tetszőleges ötödik FO karakter berakható.
+\section*{Csapat Relicezésének ajánlottsága:}
+\begin{center}
+    $2/10$
+\end{center}
+\section*{Specifics}
+\begin{tabularx}\textwidth{l l l l}
+    \textbf{KRU} & Speed 210+ & HP 70k+&\\ \\[-1em]    
+    \textbf{Kylo} & Speed 260+ &&\\ \\[-1em]
+    \textbf{FOX} & Speed 210+ & HP 45k+&\\ \\[-1em]
+    \textbf{FOST} & Speed 190+ & H/P 95k+ & Tenacity 100\%+\\ \\[-1em]
+    \textbf{FOO} & Speed 250+ &&\\
+\end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Scoundrel}
-\section{Mod Guide}
 \begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
+    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
         \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{Qi'ra} & Speed+CC & CC/Prot & Prot & P$>$H & - & Sp 240+\\
-        &  &  &  &  &  & CC 60\%\\ \hline
-        \textbf{Vandor Chewie} & HP x 3 & HP & HP & HP & Gyors modset & Sp 220+\\
-        &  &  &  &  & Prepared miatt & HP 40k\\ \hline
-        \textbf{L3} & HP x 3 & Prot & Prot & Prot & - & H/P 120k+\\
-        &  &  &  &  &  & \\ \hline
-    \end{tabular}
+        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
+        \textbf{Qi'ra} & \image{speed.png} , \image{health.png} & Prot & Prot & Prot & Speed\\\hline
+        \textbf{Vandor} & \image{health.png} x 3 & HP & HP & HP & Speed\\\hline
+        \textbf{L3} & \image{defense.png} , \image{health.png} & Prot & Prot & Prot & Prot\\\hline
+    \end{tabularx}
 \end{center}
-\section{Team Synergy \textit{\&} Strategy}
-A scoundrel team többi tagja általában a Utility karakterek közül kerül ki, ugyanis se Young Lando, se Young Han nem túlzottan remek az AI irányítása alatt. A csapat L3 tauntján és Vandor Chewie prepared-en történő újraélesztésén alapul, ők ketten a csapat motorjai.\par
-Az egyre több lényegesen erősebb team megjelenésével érdemes elgondolkodni a Scoundrel és Old Republic teamek kombinálásán.
+\section*{Csapat Relicezésének ajánlottsága:}
+\begin{center}
+    $2/10$
+\end{center}
+\section*{Specifics}
+\begin{tabularx}\textwidth{l l l}
+    \textbf{Qi'ra} & Speed 240+ & H/P 50k+\\ \\[-1em]    
+    \textbf{Vandor} & Speed 220+ & HP 45k+\\ \\[-1em]
+    \textbf{L3} & H/P 140k+ & \\ \\[-1em]
+\end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Old Republic}
-\section{Mod Guide}
 \begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
+    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
         \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{Carth} & Speed+ & Prot/CD & Tenacity & P$>$H & - & Sp 260+\\
-        & Tenacity &  &  &  &  & Tenacity 70\%+\\ \hline
-        \textbf{Candy} & Offense+ & CD & Prot/ & P$>$H & - & Sp 210+\\
-        & Tenacity &  & Tenacity &  &  & \\ \hline
-        \textbf{Zaalbar} & Tenacity x 3 & H/P & Tenacity & P$>$H & Crit Acoidance  & H/P 120k+\\
-        &  &  &  &  & vagy Prot Nyíl & Tenacity 110\%+\\ \hline
-        \textbf{Mission} & CD+CC/ & CD & Offense/ & P$>$H & Magas & Sp 230+\\
-        & Tenacity &  & Tenacity &  & Offense & \\ \hline
-        \textbf{Juhani} & HP+Tenacity & H/P & H/P/ & P$>$H & - & Sp 200+\\
-        &  &  & Tenacity &  &  & H/P 100k\\ \hline
-    \end{tabular}
+        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
+        \textbf{Carth} & \image{speed.png} , \image{tenacity.png} & CC/Prot & Tena/Prot & P$>$H & Speed\\\hline
+        \textbf{Ordo} & \image{offense.png} , \image{health.png} & Offense & Offense & P$>$H & Speed\\\hline
+        \textbf{Mission} & \image{cd.png} , \image{tenacity.png} & CD & Off/Tenacity & P$>$H & Speed\\\hline
+        \textbf{Zaalbar} & \image{tenacity.png} , \image{health.png} & Prot & Tena & Prot & Prot\\\hline
+    \end{tabularx}
 \end{center}
-\section{Team Synergy \textit{\&} Strategy}
-Az Old Republic csapat modolásakor különös figyelmet kell fordítani arra, hogy a team legnagyobb ellensége a daze és a buff immunity Zaalbar-on. Emiatt annyi Tenacity-t kell rájuk tenni kollektíve, amennnyit csak lehetséges, ezzel eliminálva szinte minden budget countert.\par
-Az egyre több lényegesen erősebb team megjelenésével érdemes elgondolkodni az Old Republic és Scoundrel teamek kombinálásán.
+\section*{Csapat Relicezésének ajánlottsága:}
+\begin{center}
+    $1.5/10$
+\end{center}
+\section*{Specifics}
+\begin{tabularx}\textwidth{l l l l}
+    \textbf{Carth} & Speed 260+ & Tenacity 70\%+&\\ \\[-1em]    
+    \textbf{Ordo} & Speed 210+ & Offense 7.000+ &\\ \\[-1em]
+    \textbf{Mission} & Speed 230+ & Offense 4.000+ & Tenacity 90\%+\\ \\[-1em]
+    \textbf{Zaalbar} & H/P 140k+ & Tenacity 100\%+ &\\ \\[-1em]
+\end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Imperial Trooper}
-\section{Mod Guide}
 \begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
+    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
         \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{Veers} & CD+CC/ & CD & Offense & P$>$H & - & $Sp = ((Starck+20)*0.6)-20$\\
-        & Potency &  &  &  &  & \\ \hline
-        \textbf{Starck} & Speed & CD/ & Offense/ & Top Sp & Leggyorsabb & Sp 290+\\
-        &  & Top Sp & Top Sp &  &  & \\ \hline
-        \textbf{Range} & CD+CC/ & CD & Offense & P$>$H & Második & $Sp = ((Starck+20)*0.8)-20$\\
-        & Speed+CC &  &  &  & leggyorsabb & \\ \hline
-        \textbf{Snow} & CD+CC & CD & Offense & P$>$H & Damage & $Sp = ((Starck+20)*0.6)-20$\\
-        &  &  &  &  & elsődleges & \\ \hline
-    \end{tabular}
+        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
+        \textbf{Veers} & \image{cd.png} , \image{cc.png} & CD & Offense & P$>$H & Speed\\\hline
+        \textbf{Starck} & \image{speed.png} & CD & Off/Potency & P$>$H & Speed\\\hline
+        \textbf{Range} & \image{cd.png}/\image{speed.png},\image{cc.png} & CD & Offense & P$>$H & Speed\\\hline
+        \textbf{Snow} & \image{cd.png} , \image{cc.png} & CD & Offense & P$>$H & Speed\\\hline
+    \end{tabularx}
 \end{center}
-\section{Team Synergy \textit{\&} Strategy}
-Egy jól működő IT team kulcsa az, hogy a modjaik, pontosabban a sebességük megfelelően legyen finomhangolva. Amennyiben Range Starck-tól 20\% TM-t kapva éri el a 100\%-ot, a többiek pedig Range-től 20\%-ot kapva érik el a 100\%-ot maximalizálható a damage, és biztosítható, hogy egy karakter szinte azon nyomban halott legyen és így működjön az IT-úthenger.\par
-Az utolsó helyre Magmatrooper ajánlott, de helyettesíthető bármelyik másik IT-vel is.
+\section*{Csapat Relicezésének ajánlottsága:}
+\begin{center}
+    $1.5/10$
+\end{center}
+\section*{Specifics}
+\begin{tabularx}\textwidth{l l}
+    \textbf{Veers} & $Speed = ((Starck+20)*0.6)-20$\\ \\[-1em]    
+    \textbf{Starck} & Speed 290+\\ \\[-1em]
+    \textbf{Range} & $Speed = ((Starck+20)*0.8)-20$\\ \\[-1em]
+    \textbf{Snow} & $Speed = ((Starck+20)*0.6)-20$\\
+\end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Ewok}
-\section{Mod Guide}
 \begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
+    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
         \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{Chirpa} & CD+CC & CD & Top Sp & H/P & - & Sp 200\\
-        &  &  &  &  &  & \\ \hline
-        \textbf{Wicket} & CD+CC & CD & Offense & H/P & Magas CC & Sp 220+\\
-        &  &  &  &  & zetával & CC 70\%+\\ \hline
-        \textbf{Paploo} & Speed+HP & H/P & H/P & H/P & Leggyorsabb & Sp 230+\\
-        &  &  &  &  & unique-al & \\ \hline
-        \textbf{Logray} & Speed+ & H/P & Potency & H/P & Magas & Sp 210\\
-        & Potency &  &  &  & Potency & Potency 100\%+\\ \hline
-        \textbf{EE} & Speed+HP & HP & HP & HP & Heal a max & Sp 220\\
-        &  &  &  &  & HP függvénye & \\ \hline
-    \end{tabular}
+        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
+        \textbf{Chirpa} & \image{cd.png} , \image{cc.png} & CD & Offense & P$>$H & Speed\\\hline
+        \textbf{Wicket} & \image{cd.png} , \image{cc.png} & CD & Offense & P$>$H & Speed\\\hline
+        \textbf{Paploo} & \image{speed.png} , \image{health.png} & H/P & H/P & P$>$H & Speed\\\hline
+        \textbf{Logray} & \image{speed.png} , \image{potency.png} & H/P & Potency & P$>$H & Speed\\\hline
+        \textbf{EE} & \image{speed.png} , \image{health.png} & H/P & H/P & P$>$H & Speed\\\hline
+    \end{tabularx}
 \end{center}
-\section{Team Synergy \textit{\&} Strategy}
-A kulcs a jó Ewok csapathoz az, hogy Paploo a Unique-jának köszönhetően (+25\% Speed) annyira gyors legyen amennyire csak lehetséges, és így el tudja indítani a szinte véget nem érő TM-traint. Fontos a CC az egész csapatton, hiszen Logray minden critical hit után kap 5\% TM-t. EE lecserélhető Scout-ra jobb eredményekkel, amennyiben legalább 2-3 zeta van a csapaton.
+\section*{Csapat Relicezésének ajánlottsága:}
+\begin{center}
+    $1/10$
+\end{center}
+\section*{Specifics}
+\begin{tabularx}\textwidth{l l l}
+    \textbf{Chirpa} & Speed 200+ &\\ \\[-1em]    
+    \textbf{Wicket} & Speed 220+ & CC 70\%+\\ \\[-1em]
+    \textbf{Paploo} & Speed 230+ & H/P 70k+\\ \\[-1em]
+    \textbf{Logray} & Speed 210+ & Potency 100\%+\\ \\[-1em]
+    \textbf{EE} & Speed 220+ & H/P 70k+\\
+\end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Utility Karakterek}
-\section{Mod Guide}
 \begin{center}
-    \begin{tabular}{|l | l | l | l | l | l | l |}
+    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
         \hline
-        Egység & Modset & Háromszög & Kereszt & Kör & Megjegyzés & Célok\\ \hline
-        \textbf{Wampa} & CD+ & CD & Offense/ & P$>$H & - & Sp 210+\\
-        & Tenacity &  & Tenacity &  &  & Tenacity 100\%\\ \hline
-        \textbf{Nest} & Tenacity x 3 & CD & Tenacity & H$>$P & Lassú & Sp 200-\\
-        &  &  &  &  & magas Tenacity & Tenacity 130\%+\\ \hline
-        \textbf{CHS} & Speed+HP & HP & HP & H$>$P & Heal a max & SP 220+\\
-        &  &  &  &  & HP függvénye & \\ \hline
-        \textbf{Thrawn} & Speed & Top Sp & Top Sp & P$>$H & - & Sp 300+\\
-        &  &  &  &  &  & \\ \hline
-        \textbf{Barris} & HP x 3 & 6E HP & 6E HP & 6E HP & 6E HP nyíl & HP 50k+\\
-        &  &  &  &  &  & \\ \hline
-    \end{tabular}
+        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
+        \textbf{Wampa} & \image{cd.png} , \image{tenacity.png} & CD & Off/Tenacity & P$>$H & Speed\\\hline
+        \textbf{Nest} & \image{tenacity.png} x 3 & CD & Tenacity & H$>$P & CritAvoid\\\hline
+        \textbf{Barris} & \image{health.png} x 3 & HP & HP & HP & HP\\\hline
+        \textbf{Nute} & \image{speed.png} & HP & HP & HP & Speed\\\hline
+        \textbf{Dooku} & \image{speed.png} , \image{potency.png} & Prot & Prot/Off & Prot & Speed\\\hline
+        \textbf{Droideka} & \image{offense.png} , \image{health.png} & CD & Offense & P$>$H & Speed\\\hline
+    \end{tabularx}
 \end{center}
-\section{Team Synergy \textit{\&} Strategy}
-Ezek a karakterek nem szerves részei egy csapatnak sem, ellenben stratégiai szempontból mégis rendkívül fontosak, és mindenképp javasolt őket az elsők között megfelelően modolni.
+\section*{Csapat Relicezésének ajánlottsága:}
+\begin{center}
+    $4.5/10$
+\end{center}
+\section*{Specifics}
+\begin{tabularx}\textwidth{l l l l}
+    \textbf{Wampa} & Speed 210+ & Tenacity 100\%+ &\\ \\[-1em]    
+    \textbf{Nest} & Speed 200- & Tenacity 130\%+ &\\ \\[-1em]
+    \textbf{Barris} & HP 90k+ &&\\ \\[-1em]
+    \textbf{Nute} & Speed 300+ & HP 65k+ &\\ \\[-1em]
+    \textbf{Dooku} & Speed 300+ & Potency 90\%+ & H/P 80k+\\
+    \textbf{Droideka} & Speed 190+ & Offense 6.500+ & H/P 110k+\\
+\end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Utószó, Disclaimer}
-Lezárásként szeretném kijelenteni, hogy a dokumentumban található értékek és javaslatok PvP-re, és 5M+ GP-vel rendelkező accountokra lettek szabva. Emiatt kisebb méretű accounttal természetesen kevesebb, alacsonyabb értékek is elégségesek lehetnek, azonban a garantált hatás elérésének érdekében azok megközelítése erősen ajánlott.\par
-Fontos ugyanakkor kiemelni, hogy önmagában az, ha egy roster jól van modolva nem jelent egyenes utat a sikerhez, de legalább nem szórja az ember azt maga előtt rajzszegekkel, mint egy rosszul modolt account esetén.\\
+Jelen dokumentum első sorban PvP-re, és 5.5M+ GP-vel rendelkező accountokra lett szabva. Fontos kiemelni, hogy bizonyos értékek ugyan túlzőnak tűnhetnek, ugyanakkor ezek csak \textbf{CÉLOK}, és nem pedig követelmények, az arányok, a megfelelő hozzáállás a fontos.
 \\
-\textbf{Ez a dokumentum belsős MAW dokumentumokon és bizalmasan kezelendő információkon alapul. Korlátozott, belső használatra,terjesztés csak előzetes engedéllyel.}\\
 \\
-\LARGE\textcopyright DEADSH07 2019. augusztus
+Fontos ugyanakkor kiemelni, hogy önmagában az, ha egy roster jól van modolva nem jelent egyenes utat a sikerhez, de legalább nem szórja tele az ember azt maga előtt rajzszegekkel, mint egy rosszul modolt account esetén.
+\\
+\\
+\textbf{Ez a dokumentum belsős MAW dokumentumokon és bizalmasan kezelendő információkon alapul. Korlátozott, belső használatra, terjesztés csak előzetes engedéllyel.}
+\\
+\\
+\LARGE\textcopyright DEADSH07 2019. december
 \end{document}

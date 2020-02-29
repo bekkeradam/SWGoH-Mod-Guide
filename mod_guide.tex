@@ -27,8 +27,8 @@
 
 \author{DEADSH07}
 \title{PvP Masterclass\\[35pt]
-{\Huge Ultimate Modding \textit{\&} Teambuilding Guide}\\
-Version 2.0.0}
+{\Huge Ultimate Modding \textit{\&} Team-building Guide}\\
+Version 2.1.0}
 
 
 \begin{document}
@@ -41,6 +41,7 @@ Version 2.0.0}
 \begin{center}
     \begin{tabularx}\textwidth{|X|X|}
         \hline
+        CA & Critical Avoidance \\
         CC & Critical Chance \\
         CD & Critical Damage \\
         HP & Helath \\
@@ -57,18 +58,19 @@ Version 2.0.0}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Change Log}
-Changes from revision 1.2.0:
+Changes from revision 2.0.0:
 \begin{itemize}
-    \item Removed disclaimer and intro
-    \item Removed "Synergy and Strategy parts", replaced them with "Relic and Specifics"
-    \item Reorganized order based on team relevance
-    \item Thrawn added to Sith Triumvirate team
-    \item FOO added to FO team
-    \item Juhani removed from OR team
-    \item Shaak Ti moved to GR team
-    \item CHS and Thrawn removed from utility characters
-    \item Nute, Dooku and DDK added to utility characters
-    \item Minor tweaks in some numbers to accomodate to character development
+    \item Relic Recommendations removed
+    \item SE team option B added; SeT added
+    \item 501st modding slightly adjusted
+    \item Wat Tambor moved from GG droids to utility toons; B2 \& Magna H/P order adjusted
+    \item 3PO moved from GR to CLS team
+    \item Tenacity requirement added to GBA
+    \item SeT removed from Traya Trium team
+    \item CLS team modding adjusted to GAS counter
+    \item Resistance Hero Finn \& Poe added to Resistance instead of Finn \& RT
+    \item General Hux \& Sith Trooper added to First Order, FOO removed
+    \item Fast Nest added as an option
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -78,24 +80,27 @@ Changes from revision 1.2.0:
     \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
         \hline
         Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
-        \textbf{Darth Revan} & \image{speed.png} & Top Sp & Top Sp & P$>$H & Speed\\\hline
-        \textbf{BSF} & \image{speed.png} & Top Sp & Top Sp & HP & Speed\\\hline
-        \textbf{Darth Malak} & \image{health.png} x 3 & Prot & Prot & Prot & Speed\\\hline
-        \textbf{HK-47} & \image{offense.png},\image{cc.png} & Offense & Offense & P$>$H & Speed\\\hline
-        \textbf{Marauder} & \image{cd.png},\image{health.png} & CD & Offense & P$>$H & Speed\\\hline
+        \textbf{Darth Revan (A)} & \image{speed.png} & Top Sp & Top Sp & H$>$P & Speed\\\hline
+        \textbf{BSF (A)} & \image{speed.png} & Top Sp & Top Sp & HP & Speed\\\hline
+        \textbf{Darth Malak (A)} & \image{health.png} x 3 & Prot & Prot & Prot & Speed\\\hline
+        \textbf{HK-47 (A)} & \image{offense.png},\image{cc.png} & Offense & Offense & P$>$H & Speed\\\hline
+        \textbf{Marauder} & \image{cd.png},\image{health.png} & CD & Offense & P$>$H & Speed\\\hline\hline
+        \textbf{Darth Revan (B)} & \image{offense.png},\image{potency.png} & CD & Offense & H$>$P & Speed\\\hline
+        \textbf{BSF (B)} & \image{health.png} x 3 & HP & HP & HP & CA\\\hline
+        \textbf{Darth Malak (B)} & \image{cd.png},\image{tenacity.png} & CD/Prot & Prot & Prot & Prot\\\hline
+        \textbf{HK-47 (B)} & \image{speed.png},\image{cc.png} & Offense & Offense & P$>$H & Speed\\\hline
+        \textbf{Sith Empire Trooper} & \image{health.png} x 3 & Prot & Prot & Prot & Prot\\\hline
     \end{tabularx}    
 \end{center}
-\section*{Csapat Relicezésének ajánlottsága:}
-\begin{center}
-    $7.5/10$
-\end{center}
 \section*{Specifics}
-\begin{tabularx}\textwidth{l l l}
-    \textbf{DR} & Speed 330+ & H/P 100k+\\ \\[-1em]
-    \textbf{BSF} & Speed 310+ & HP 90k+\\ \\[-1em]
-    \textbf{Malak} & Speed 300+ & H/P 250k+\\ \\[-1em]
-    \textbf{HK} & Speed 220+ & Offense 10.000+\\ \\[-1em]
-    \textbf{Marauder} & Speed 250+ & Offense 7000+\\ \\[-1em]
+\begin{tabularx}\textwidth{l l l l l l}
+    & \multicolumn{2}{c}{A} & & \multicolumn{2}{c}{B}\\
+    \textbf{DR} & Speed 330+ & H/P 100k+ & & Speed 290+ & Spec Offense 12.000+ \\ \\[-1em]
+    \textbf{BSF} & Speed 310+ & HP 90k+ & & Speed 260+ & HP 100k+\\ \\[-1em]
+    \textbf{Malak} & Speed 300+ & H/P 250k+ & & Speed 260+ & H/P 200k+\\ \\[-1em]
+    \textbf{HK} & Speed 220+ & Offense 10.000+ & & BSF-1 & Offense 8.000+\\ \\[-1em]
+    \textbf{Marauder} & Speed 250+ & Offense 7000+ & & &\\ \\[-1em]
+    \textbf{SeT} & & & & H/P 180k+&\\ \\[-1em]
 \end{tabularx} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -106,23 +111,19 @@ Changes from revision 1.2.0:
         \hline
         Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
         \textbf{GAS} & \image{offense.png},\image{health.png}/\image{defense.png} & CD/Prot & Prot & Prot & Prot\\\hline  
-        \textbf{Rex} & \image{speed.png} , \image{health.png} & HP & HP & HP & Speed\\\hline
-        \textbf{Fives} & \image{health.png} / \image{defense.png} & Prot & Prot & Prot & Prot\\\hline        
+        \textbf{Rex} & \image{speed.png},\image{health.png}/\image{tenacity.png} & H/P & H/P & H/P & Speed\\\hline
+        \textbf{Fives} & \image{health.png}/\image{defense.png},\image{offense.png} & Prot & Prot & Prot & Prot\\\hline        
         \textbf{Echo} & \image{cd.png} , \image{cc.png} & CD & Offense & Prot & Offense\\\hline    
-        \textbf{ARC} & \image{offense.png} , \image{cc.png} & Offense & Prot & Prot & Speed\\\hline 
+        \textbf{ARC} & \image{offense.png} , \image{cc.png} & Offense & Offense & Prot & Speed\\\hline 
     \end{tabularx}
-\end{center}
-\section*{Csapat Relicezésének ajánlottsága:}
-\begin{center}
-    $10/10$
 \end{center}
 \section*{Specifics}
 \begin{tabularx}\textwidth{l l l}
-    \textbf{GAS} & Speed 260+ & H/P 180k+\\ \\[-1em]
+    \textbf{GAS} & Speed 260+ & Prot 125k+\\ \\[-1em]
     \textbf{Rex} & Speed 300+&\\ \\[-1em]
-    \textbf{Fives} & Speed 200+ & H/P 170k+\\ \\[-1em]
-    \textbf{Echo} & Speed 200+ & Special Offense 10.000+\\ \\[-1em]
-    \textbf{ARC} & Speed 270+ & Offense 10.000+\\ \\[-1em]
+    \textbf{Fives} & Speed 230+ & H/P 170k+\\ \\[-1em]
+    \textbf{Echo} & CC 55\%+ & Special Offense 10.000+\\ \\[-1em]
+    \textbf{ARC} & Speed 280+ & Offense 10.000+\\ \\[-1em]
 \end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -134,22 +135,16 @@ Changes from revision 1.2.0:
         Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
         \textbf{GG} & \image{health.png} x 3 & HP & HP & HP & HP\\\hline
         \textbf{B1} & \image{offense.png} & Offense & Offense & Top Sp & Speed\\\hline
-        \textbf{B2} & \image{tenacity.png} , \image{potency.png} & Prot & Potency & Prot & Prot\\\hline
-        \textbf{IG-100} & \image{defense.png} , \image{health.png} & Prot & Prot & Prot &Speed\\\hline
-        \textbf{Wat} & \image{speed.png} , \image{health.png} & HP & HP & HP & Speed\\\hline
+        \textbf{B2} & \image{tenacity.png},\image{potency.png},\image{health.png} & Prot & Potency & Prot & Prot\\\hline
+        \textbf{IG-100} & \image{tenacity.png} x 3 & Prot & Tenacity & Prot &CA/Prot\\\hline        
     \end{tabularx}
-\end{center}
-\section*{Csapat Relicezésének ajánlottsága:}
-\begin{center}
-    $7/10$
 \end{center}
 \section*{Specifics}
 \begin{tabularx}\textwidth{l l l l}
     \textbf{GG} & Speed 230+ & HP 150k+&\\ \\[-1em]
     \textbf{B1} & Speed 290+ & Offense 10.000+&\\ \\[-1em]
-    \textbf{B2} & Tenacity 100\%+ & Potency 100\%+ & H/P 160k+\\ \\[-1em]
-    \textbf{Magna} & Speed 200+ & H/P 150k+&\\ \\[-1em]
-    \textbf{Wat} & Speed 300+ & H/P 150k+&\\ \\[-1em]
+    \textbf{B2} & Tenacity 100\%+ & Potency 100\%+ & H/P 150k+\\ \\[-1em]
+    \textbf{Magna} & Tenacity 100\%+ & H/P 160k+&\\ \\[-1em]    
 \end{tabularx}
 
 
@@ -166,10 +161,6 @@ Changes from revision 1.2.0:
         \textbf{JKA} & \image{cd.png} , \image{cc.png} & CD & Offense & P$>$H & Speed/Off\\\hline
         \textbf{Hoda} & \image{speed.png} & H/P & H/P & P$>$H & Speed\\\hline
     \end{tabularx}
-\end{center}
-\section*{Csapat Relicezésének ajánlottsága:}
-\begin{center}
-    $6/10$
 \end{center}
 \section*{Specifics}
 \begin{equation}
@@ -194,23 +185,17 @@ Changes from revision 1.2.0:
         Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
         \textbf{Padmé} & \image{health.png} x 3 & HP & HP & HP & Speed\\\hline
         \textbf{GK} & \image{health.png} x 3 & HP & HP & HP & Speed\\\hline
-        \textbf{GMY} & \image{speed.png} , \image{health.png} & CD/HP & HP & HP & Speed\\\hline
-        \textbf{Ahsoka} & \image{health.png} x 3 & HP/CD & HP & HP & HP\\\hline
-        \textbf{C-3PO} & \image{speed.png}, \image{health.png} & HP & Potency/HP & HP & Speed\\\hline
+        \textbf{GMY} & \image{offense.png}/\image{speed.png},\image{health.png} & CD/HP & HP & HP & Speed\\\hline
+        \textbf{Ahsoka} & \image{health.png} x 3 & HP & HP & HP & HP\\\hline        
         \textbf{Shaak Ti} & \image{speed.png}, \image{health.png} & HP & HP & HP & Speed\\\hline
     \end{tabularx}
-\end{center}
-\section*{Csapat Relicezésének ajánlottsága:}
-\begin{center}
-    $8.5/10$
 \end{center}
 \section*{Specifics}
 \begin{tabularx}\textwidth{l l l l}
     \textbf{Padmé} & Speed 290+ & HP 80k+ &\\ \\[-1em]    
     \textbf{GK} & Speed 250+ & HP 90k+ &\\ \\[-1em]
     \textbf{GMY} & Speed 295+ & HP 50k+ &\\ \\[-1em]
-    \textbf{Ahsoka} & Speed 200+ & HP 70k+ &\\ \\[-1em]
-    \textbf{C-3PO} & Speed 260+ & HP 70k+ & Potency 90\%+\\ \\[-1em]
+    \textbf{Ahsoka} & Speed 200+ & HP 70k+ &\\ \\[-1em]    
     \textbf{Shaak Ti} & Speed 300+ & HP 50k+ &\\
 \end{tabularx}
 
@@ -221,20 +206,16 @@ Changes from revision 1.2.0:
     \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
         \hline
         Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
-        \textbf{Brood Alpha} & \image{speed.png} , \image{tenacity.png} & Top Sp & Top Sp & P$>$H & Speed\\\hline
+        \textbf{Brood Alpha} & \image{speed.png} , \image{tenacity.png} & Top Sp & Tenacity & P$>$H & Speed\\\hline
         \textbf{Soldier} & \image{cc.png} x 3 & CD/CC & Offense & P$>$H & Speed\\\hline
         \textbf{Spy} & \image{cd.png} , \image{cc.png} & CD & Offense & P$>$H & Speed\\\hline
         \textbf{Sun Fac} & \image{health.png} , \image{tenacity.png} & Prot & Prot & Prot & Speed\\\hline
         \textbf{Poggle} & \image{speed.png} , \image{potency.png} & H/P & Potency & P$>$H & Speed\\\hline        
     \end{tabularx}
 \end{center}
-\section*{Csapat Relicezésének ajánlottsága:}
-\begin{center}
-    $5.5/10$
-\end{center}
 \section*{Specifics}
 \begin{tabularx}\textwidth{l l l l}
-    \textbf{Brood Alpha} & Speed 290+ & H/P 160k+ &\\ \\[-1em]    
+    \textbf{Brood Alpha} & Speed 290+ & H/P 160k+ & Tenacity 100\%+\\ \\[-1em]    
     \textbf{Soldier} & Speed 240+ & Offense 5.000+ & CC 100\%+\\ \\[-1em]
     \textbf{Spy} & Speed 210+ & Offense 5.000+ &\\ \\[-1em]
     \textbf{Sun Fac} & Speed 200+ & H/P 150k+ & Tenacity 100\%+\\ \\[-1em]
@@ -250,21 +231,15 @@ Changes from revision 1.2.0:
         Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
         \textbf{Traya} & \image{speed.png} , \image{health.png} & H/P & H/P & H/P & Speed\\\hline
         \textbf{Nihilus} & \image{speed.png} , \image{health.png} & HP & HP & HP & Speed\\\hline
-        \textbf{Sion} & \image{speed.png} , \image{health.png} & H/P & H/P & H/P & Speed\\\hline
-        \textbf{Sith Trooper} & \image{health.png} , \image{defense.png} & Prot & Prot & Prot & Prot\\\hline
+        \textbf{Sion} & \image{speed.png} , \image{health.png} & H/P & H/P & H/P & Speed\\\hline        
         \textbf{Thrawn} & \image{speed.png} & H/P & H/P & H/P & Speed\\\hline
     \end{tabularx}
-\end{center}
-\section*{Csapat Relicezésének ajánlottsága:}
-\begin{center}
-    $3.5/10$
 \end{center}
 \section*{Specifics}
 \begin{tabularx}\textwidth{l l l}
     \textbf{Traya} & Speed 270+ & H/P 120k+\\ \\[-1em]    
     \textbf{Nihilus} & Speed 250+ & H/P 110k+\\ \\[-1em]
-    \textbf{Sion} & \textbf{Traya + 8} & H/P 140k+\\ \\[-1em]
-    \textbf{Sith Trooper} & H/P 120k+ &\\ \\[-1em]
+    \textbf{Sion} & \textbf{Traya + 8} & H/P 140k+\\ \\[-1em]    
     \textbf{Thrawn} & Speed 300+ & H/P 100k+\\
 \end{tabularx}
 
@@ -277,20 +252,18 @@ Changes from revision 1.2.0:
         Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
         \textbf{CLS} & \image{cd.png} , \image{cc.png} & CD & Offense & P$>$H & Speed\\\hline
         \textbf{Han} & \image{cd.png} , \image{cc.png} & CD & Offense & P$>$H & Offense\\\hline
-        \textbf{Chewie} & \image{offense.png},\image{cc.png}/\image{tenacity.png} & CD & Offense/Tena & P$>$H & Speed\\\hline
+        \textbf{Chewie} & \image{tenacity.png} x 3 & CD & Offense/Tena & P$>$H & Speed\\\hline
         \textbf{Old Ben} & \image{speed.png} , \image{health.png} & Prot & Prot & Prot & Speed\\\hline
+        \textbf{C-3PO} & \image{speed.png}, \image{health.png} & HP & Potency/HP & HP & Speed\\\hline
     \end{tabularx}
 \end{center}
-\section*{Csapat Relicezésének ajánlottsága:}
-\begin{center}
-    $7/10$
-\end{center}
 \section*{Specifics}
-\begin{tabularx}\textwidth{l l l}
-    \textbf{CLS} & Speed 275+ & Offense 6.500+\\ \\[-1em]    
-    \textbf{Han} & Speed 200+ & Offense 8.500+\\ \\[-1em]
-    \textbf{Chewie} & Speed 250+ & Offense 8.000+ / Tenacity 125\%+\\ \\[-1em]
-    \textbf{Old Ben} & Speed 240+ & H/P 130k+\\
+\begin{tabularx}\textwidth{l l l l}
+    \textbf{CLS} & Speed 290+ & Offense 6.500+ &\\ \\[-1em]    
+    \textbf{Han} & Speed 230+ & Offense 9.000+ &\\ \\[-1em]
+    \textbf{Chewie} & Speed 250+ & Offense 8.000+ & Tenacity 140\%+\\ \\[-1em]
+    \textbf{Old Ben} & Speed 240+ & H/P 130k+ &\\
+    \textbf{C-3PO} & Speed 270+ & HP 70k+ & Potency 90\%+\\ \\[-1em]
 \end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -307,15 +280,11 @@ Changes from revision 1.2.0:
         \textbf{Spirit} & \image{speed.png}/\image{offense.png},\image{cc.png} & CD & Offense & HP & Speed\\\hline
     \end{tabularx}
 \end{center}
-\section*{Csapat Relicezésének ajánlottsága:}
-\begin{center}
-    $5.5/10$
-\end{center}
 \section*{Specifics}
 \begin{tabularx}\textwidth{l l l l}
     \textbf{Ventress} & Speed 220+ & Offense 4.500+ & HP 50k+\\ \\[-1em]    
     \textbf{Talzin} & Speed 240+ & Special Offense 9.500+ & HP 60k+\\ \\[-1em]
-    \textbf{Daka} & Speed 280+ & HP 100k+ &\\ \\[-1em]
+    \textbf{Daka} & Speed 280+ & HP 110k+ &\\ \\[-1em]
     \textbf{Zombie} & Speed 240+ & HP 100k+ &\\ \\[-1em]
     \textbf{Spirit} & Speed 290+ & Offense 6.500+ & HP 45k+\\
 \end{tabularx}
@@ -334,10 +303,6 @@ Changes from revision 1.2.0:
         \textbf{Dengar} & \image{speed.png} , \image{cc.png} & H/P/CC & Potency/Prot & P$>$H & Speed\\\hline
     \end{tabularx}
 \end{center}
-\section*{Csapat Relicezésének ajánlottsága:}
-\begin{center}
-    $5/10$
-\end{center}
 \section*{Specifics}
 \begin{tabularx}\textwidth{l l l l}
     \textbf{Jango} & Speed 300+ & Offense 5.000+ &\\ \\[-1em]    
@@ -353,24 +318,45 @@ Changes from revision 1.2.0:
     \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
         \hline
         Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
-        \textbf{JTR} & \image{cd.png},\image{cc.png}/\image{potency.png} & CD & Off/Potency & P$>$H & Speed\\\hline
+        \textbf{JTR} & \image{cd.png},\image{health.png}/\image{potency.png} & CD & Off/Potency & P$>$H & Speed\\\hline
         \textbf{BB-8} & \image{speed.png} & H/P & H/P & P$>$H & Speed\\\hline
         \textbf{R2-D2} & \image{speed.png} , \image{health.png} & HP & HP & HP & Speed\\\hline
-        \textbf{RT} & \image{cd.png} , \image{cc.png} & CD & Offense & P$>$H & Offense\\\hline
-        \textbf{Finn} & \image{cd.png} , \image{cc.png} & CD & Offense & P$>$H & Speed\\\hline
+        \textbf{HeroFinn} & \image{speed.png} & CD & Offense & P$>$H & Speed\\\hline
+        \textbf{HeroPoe} & \image{offense.png} , \image{potency.png} & CD & Offense & P$>$H & Speed\\\hline
     \end{tabularx}
-\end{center}
-\section*{Csapat Relicezésének ajánlottsága:}
-\begin{center}
-    $2.5/10$
 \end{center}
 \section*{Specifics}
 \begin{tabularx}\textwidth{l l l}
-    \textbf{JTR} & Speed 240+ &\\ \\[-1em]    
-    \textbf{BB-8} & Speed 290+ &\\ \\[-1em]
-    \textbf{R2-D2} & Speed 280+ & HP 65k+\\ \\[-1em]
-    \textbf{RT} & Offense 3.500+ &\\ \\[-1em]
-    \textbf{Finn} & Speed 290+ & Offense 2.500+\\
+    \textbf{JTR} & Speed 260+ &\\ \\[-1em]    
+    \textbf{BB-8} & Speed 300+ &\\ \\[-1em]
+    \textbf{R2-D2} & Speed 290+ & HP 65k+\\ \\[-1em]
+    \textbf{Hero Finn} & Speed 320+ & Offense 6.000+\\ \\[-1em]
+    \textbf{Hero Poe} & Speed 270+ & Offense 6.500+\\
+\end{tabularx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{First Order}
+\begin{center}
+    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
+        \hline
+        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
+        \textbf{General Hux} & \image{cd.png} , \image{cc.png} & Prot & Prot & Prot & Speed\\\hline
+        \textbf{KRU} & \image{health.png} , \image{defense.png} & HP & HP & HP & Speed\\\hline
+        \textbf{Kylo} & \image{speed.png} , \image{health.png} & CD/H/P & Off/H/P & P$>$H & Speed\\\hline
+        \textbf{FOX} & \image{cd.png} , \image{health.png} & CD & HP & HP & Speed\\\hline
+        \textbf{FOST} & \image{health.png} , \image{tenacity.png} & H/P & H/P/Tena & P$>$H & Speed\\\hline
+        \textbf{Sith Trooper} & \image{cd.png} , \image{health.png} & CD & Offense & H$>$P & Speed\\\hline
+    \end{tabularx}
+\end{center}
+\section*{Specifics}
+\begin{tabularx}\textwidth{l l l l}
+    \textbf{General Hux} & Speed 270+ & &\\ \\[-1em]    
+    \textbf{KRU} & Speed 210+ & HP 70k+&\\ \\[-1em]    
+    \textbf{Kylo} & Speed 260+ &&\\ \\[-1em]
+    \textbf{FOX} & Speed 210+ & HP 45k+&\\ \\[-1em]
+    \textbf{FOST} & Speed 190+ & H/P 95k+ & Tenacity 100\%+\\ \\[-1em]
+    \textbf{Sith Trooper} & Speed 240+ & Offense 8.000+&\\
 \end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -387,10 +373,6 @@ Changes from revision 1.2.0:
         \textbf{DT} & \image{cd.png} , \image{cc.png} & CD & Offense & P$>$H & Speed\\\hline
     \end{tabularx}
 \end{center}
-\section*{Csapat Relicezésének ajánlottsága:}
-\begin{center}
-    $2.5/10$
-\end{center}
 \section*{Specifics}
 \begin{tabularx}\textwidth{l l l}
     \textbf{Palpatine} & Speed 260+ & Potency 90\%+\\ \\[-1em]    
@@ -398,33 +380,6 @@ Changes from revision 1.2.0:
     \textbf{Tarkin} & Speed 250+ & Potency 80\%+\\ \\[-1em]
     \textbf{Shore} & Speed 210+ & H/P 90k+\\ \\[-1em]
     \textbf{DT} & Speed 220+ &\\
-\end{tabularx}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\chapter{First Order}
-\begin{center}
-    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
-        \hline
-        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
-        \textbf{KRU} & \image{health.png} , \image{defense.png} & HP & HP & HP & Speed\\\hline
-        \textbf{Kylo} & \image{speed.png} , \image{health.png} & CD/H/P & Off/H/P & P$>$H & Speed\\\hline
-        \textbf{FOX} & \image{cd.png} , \image{health.png} & CD & HP & HP & Speed\\\hline
-        \textbf{FOST} & \image{health.png} , \image{tenacity.png} & H/P & H/P/Tena & P$>$H & Speed\\\hline
-        \textbf{FOO} & \image{speed.png} & H/P & H/P/Potency & P$>$H & Speed\\\hline
-    \end{tabularx}
-\end{center}
-\section*{Csapat Relicezésének ajánlottsága:}
-\begin{center}
-    $2/10$
-\end{center}
-\section*{Specifics}
-\begin{tabularx}\textwidth{l l l l}
-    \textbf{KRU} & Speed 210+ & HP 70k+&\\ \\[-1em]    
-    \textbf{Kylo} & Speed 260+ &&\\ \\[-1em]
-    \textbf{FOX} & Speed 210+ & HP 45k+&\\ \\[-1em]
-    \textbf{FOST} & Speed 190+ & H/P 95k+ & Tenacity 100\%+\\ \\[-1em]
-    \textbf{FOO} & Speed 250+ &&\\
 \end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -438,10 +393,6 @@ Changes from revision 1.2.0:
         \textbf{Vandor} & \image{health.png} x 3 & HP & HP & HP & Speed\\\hline
         \textbf{L3} & \image{defense.png} , \image{health.png} & Prot & Prot & Prot & Prot\\\hline
     \end{tabularx}
-\end{center}
-\section*{Csapat Relicezésének ajánlottsága:}
-\begin{center}
-    $2/10$
 \end{center}
 \section*{Specifics}
 \begin{tabularx}\textwidth{l l l}
@@ -463,10 +414,6 @@ Changes from revision 1.2.0:
         \textbf{Zaalbar} & \image{tenacity.png} , \image{health.png} & Prot & Tena & Prot & Prot\\\hline
     \end{tabularx}
 \end{center}
-\section*{Csapat Relicezésének ajánlottsága:}
-\begin{center}
-    $1.5/10$
-\end{center}
 \section*{Specifics}
 \begin{tabularx}\textwidth{l l l l}
     \textbf{Carth} & Speed 260+ & Tenacity 70\%+&\\ \\[-1em]    
@@ -487,10 +434,6 @@ Changes from revision 1.2.0:
         \textbf{Range} & \image{cd.png}/\image{speed.png},\image{cc.png} & CD & Offense & P$>$H & Speed\\\hline
         \textbf{Snow} & \image{cd.png} , \image{cc.png} & CD & Offense & P$>$H & Speed\\\hline
     \end{tabularx}
-\end{center}
-\section*{Csapat Relicezésének ajánlottsága:}
-\begin{center}
-    $1.5/10$
 \end{center}
 \section*{Specifics}
 \begin{tabularx}\textwidth{l l}
@@ -514,10 +457,6 @@ Changes from revision 1.2.0:
         \textbf{EE} & \image{speed.png} , \image{health.png} & H/P & H/P & P$>$H & Speed\\\hline
     \end{tabularx}
 \end{center}
-\section*{Csapat Relicezésének ajánlottsága:}
-\begin{center}
-    $1/10$
-\end{center}
 \section*{Specifics}
 \begin{tabularx}\textwidth{l l l}
     \textbf{Chirpa} & Speed 200+ &\\ \\[-1em]    
@@ -534,26 +473,26 @@ Changes from revision 1.2.0:
     \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
         \hline
         Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
-        \textbf{Wampa} & \image{cd.png} , \image{tenacity.png} & CD & Off/Tenacity & P$>$H & Speed\\\hline
-        \textbf{Nest} & \image{tenacity.png} x 3 & CD & Tenacity & H$>$P & CritAvoid\\\hline
-        \textbf{Barris} & \image{health.png} x 3 & HP & HP & HP & HP\\\hline
-        \textbf{Nute} & \image{speed.png} & HP & HP & HP & Speed\\\hline
+        \textbf{Wat} & \image{speed.png} , \image{health.png} & HP & HP & HP & Speed\\\hline
+        \textbf{Nute} & \image{speed.png} , \image{health.png} & HP & HP & HP & Speed\\\hline        
+        \textbf{Nest (A)} & \image{tenacity.png} x 3 & CD & Tenacity & H$>$P & CritAvoid\\\hline
+        \textbf{Nest (B)} & \image{speed.png},\image{health.png},\image{potency.png} & CD & Top Sp & H$>$P & Speed\\\hline
+        \textbf{Barris} & \image{health.png} x 3 & HP & HP & HP & HP\\\hline        
         \textbf{Dooku} & \image{speed.png} , \image{potency.png} & Prot & Prot/Off & Prot & Speed\\\hline
         \textbf{Droideka} & \image{offense.png} , \image{health.png} & CD & Offense & P$>$H & Speed\\\hline
+        \textbf{Wampa} & \image{cd.png} , \image{tenacity.png} & CD & Off/Tenacity & P$>$H & Speed\\\hline
     \end{tabularx}
 \end{center}
-\section*{Csapat Relicezésének ajánlottsága:}
-\begin{center}
-    $4.5/10$
-\end{center}
 \section*{Specifics}
-\begin{tabularx}\textwidth{l l l l}
-    \textbf{Wampa} & Speed 210+ & Tenacity 100\%+ &\\ \\[-1em]    
-    \textbf{Nest} & Speed 200- & Tenacity 130\%+ &\\ \\[-1em]
-    \textbf{Barris} & HP 90k+ &&\\ \\[-1em]
-    \textbf{Nute} & Speed 300+ & HP 65k+ &\\ \\[-1em]
-    \textbf{Dooku} & Speed 300+ & Potency 90\%+ & H/P 80k+\\
-    \textbf{Droideka} & Speed 190+ & Offense 6.500+ & H/P 110k+\\
+\begin{tabularx}\textwidth{l l l l l l l}
+    & \multicolumn{3}{c}{A} & & \multicolumn{2}{c}{B}\\
+    \textbf{Wat} & Speed 310+ & H/P 150k+&&&&\\ \\[-1em]
+    \textbf{Nute} & Speed 315+ & HP 65k+ &&&&\\ \\[-1em]    
+    \textbf{Nest} & Speed 200- & Tenacity 130\%+ &&& Speed 310+ & H/P 100k+\\ \\[-1em]
+    \textbf{Barris} & HP 120k+ &&&&&\\ \\[-1em]    
+    \textbf{Dooku} & Speed 300+ & Potency 90\%+ & H/P 80k+&&&\\ \\[-1em]
+    \textbf{Droideka} & Speed 190+ & Offense 6.500+ & H/P 110k+&&&\\ \\[-1em]
+    \textbf{Wampa} & Speed 210+ & Tenacity 100\%+ &&&&\\ \\[-1em]
 \end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -568,5 +507,5 @@ Fontos ugyanakkor kiemelni, hogy önmagában az, ha egy roster jól van modolva 
 \textbf{Ez a dokumentum belsős MAW dokumentumokon és bizalmasan kezelendő információkon alapul. Korlátozott, belső használatra, terjesztés csak előzetes engedéllyel.}
 \\
 \\
-\LARGE\textcopyright DEADSH07 2019. december
+\LARGE\textcopyright DEADSH07 2020. február
 \end{document}

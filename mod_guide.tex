@@ -21,14 +21,15 @@
 \usepackage{draftwatermark}
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage{amssymb}
 \newcommand{\image}[1]{\includegraphics[width=0.75cm, height=0.75cm]{#1}}
 \SetWatermarkText{\textcopyright DEADSH07}
 \SetWatermarkScale{0.65}
 
 \author{DEADSH07}
-\title{PvP Masterclass\\[35pt]
-{\Huge Ultimate Modding \textit{\&} Team-building Guide}\\
-Version 2.1.1}
+\title{%PvP Masterclass\\[35pt]
+{\Huge Ultimate Mod - Guide}\\
+Public Version 1.0.0}
 
 
 \begin{document}
@@ -44,7 +45,7 @@ Version 2.1.1}
         CA & Critical Avoidance \\
         CC & Critical Chance \\
         CD & Critical Damage \\
-        HP & Helath \\
+        HP & Health \\
         H/P & Ekvivalens HP, HP+Protection együtt \\
         Prot & Protection \\
         Sp & Speed \\
@@ -58,11 +59,57 @@ Version 2.1.1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Change Log}
-Changes from revision 2.1.0:
+Changes from revision 2.1.1:
 \begin{itemize}
-    \item FO team modding refined
-    \item Resistance team modding refined
+    \item Re-ordered chapters based on team relevance
+    \item Galactic Legends added
 \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Előszó, Bemutatkozás}
+
+Mivel sokan biztos nem ismertek, egy mondatban bemutatkoznék, hogy ugyan miért is higgyétek el azt, amit ebben a doksiban írok. A játékon belül DE$\Delta$DSH07 néven futok \href{https://swgoh.gg/p/154992793/}{(swgoh.gg profil a linken)}, és a világ jelenlegi legnagyobb guildjének (M$\Delta$W Chromium) vagyok az egyik TW leadje, így esélyes hogy amit leírok az nem lesz nagy butaság. :)
+\\
+\\
+Ez a dokumentum első sorban PvP-re, és 5.5M+ GP-vel rendelkező accountokra lett szabva. Fontos kiemelni, hogy bizonyos értékek ugyan túlzónak tűnhetnek, ugyanakkor ezek csak \textbf{CÉLOK}, és nem pedig követelmények, az arányok, a megfelelő hozzáállás a fontos.
+\\
+\\
+Kiemelendő ugyanakkor, hogy önmagában az, ha egy roster jól van modolva nem jelent egyenes utat a sikerhez, de legalább nem szórja tele az ember azt maga előtt rajzszegekkel, mint egy rosszul modolt account esetén.
+\\
+\\
+\Large \textbf{Amennyiben valaki úgy érzi, magasabb szintre emelné az acccountját és ezzel együtt a modolását is, az keressen meg nyugodt szívvel Discordon (DE$\Delta$DSH07\#9992). 
+\\
+\\
+Régóta nyújtok teljes roster-remodot, amit magyaroknak kedvezményes áron tudok felajánlani!
+(account mérettől függően).}
+\\
+\\
+Részletek privátban!
+\normalsize
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{501st}
+\begin{center}
+    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
+        \hline
+        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
+        \textbf{GAS} & \image{offense.png},\image{health.png}/\image{defense.png} & CD/Prot & Prot & Prot & Prot\\\hline  
+        \textbf{Rex} & \image{speed.png},\image{health.png}/\image{tenacity.png} & H/P & H/P & H/P & Speed\\\hline
+        \textbf{Fives} & \image{health.png}/\image{defense.png},\image{offense.png} & Prot & Prot & Prot & Prot\\\hline        
+        \textbf{Echo} & \image{cd.png} , \image{cc.png} & CD & Offense & Prot & Offense\\\hline    
+        \textbf{ARC} & \image{offense.png} , \image{cc.png} & Offense & Offense & Prot & Speed\\\hline 
+    \end{tabularx}
+\end{center}
+\section*{Specifics}
+\begin{tabularx}\textwidth{l l l}
+    \textbf{GAS} & Speed 260+ & Prot 125k+\\ \\[-1em]
+    \textbf{Rex} & Speed 300+&\\ \\[-1em]
+    \textbf{Fives} & Speed 230+ & H/P 170k+\\ \\[-1em]
+    \textbf{Echo} & CC 55\%+ & Special Offense 10.000+\\ \\[-1em]
+    \textbf{ARC} & Speed 280+ & Offense 10.000+\\ \\[-1em]
+\end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -96,25 +143,54 @@ Changes from revision 2.1.0:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{501st}
+\chapter{Resistance}
 \begin{center}
     \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
         \hline
         Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
-        \textbf{GAS} & \image{offense.png},\image{health.png}/\image{defense.png} & CD/Prot & Prot & Prot & Prot\\\hline  
-        \textbf{Rex} & \image{speed.png},\image{health.png}/\image{tenacity.png} & H/P & H/P & H/P & Speed\\\hline
-        \textbf{Fives} & \image{health.png}/\image{defense.png},\image{offense.png} & Prot & Prot & Prot & Prot\\\hline        
-        \textbf{Echo} & \image{cd.png} , \image{cc.png} & CD & Offense & Prot & Offense\\\hline    
-        \textbf{ARC} & \image{offense.png} , \image{cc.png} & Offense & Offense & Prot & Speed\\\hline 
+        \textbf{Rey (GL)} & \image{speed.png}, \image{health.png} & HP & HP & HP & Speed\\\hline
+        \textbf{JTR} & \image{cd.png},\image{health.png}/\image{potency.png} & CD & Off/Potency & P$>$H & Speed\\\hline
+        \textbf{BB-8} & \image{speed.png} & H/P & H/P & P$>$H & Speed\\\hline
+        \textbf{R2-D2} & \image{speed.png} , \image{health.png} & HP & HP & HP & Speed\\\hline
+        \textbf{HeroFinn} & \image{speed.png} & CD & Offense & P$>$H & Speed\\\hline
+        \textbf{HeroPoe} & \image{offense.png}/\image{cd.png},\image{potency.png} & CD & Offense & P$>$H & Speed\\\hline
     \end{tabularx}
 \end{center}
 \section*{Specifics}
 \begin{tabularx}\textwidth{l l l}
-    \textbf{GAS} & Speed 260+ & Prot 125k+\\ \\[-1em]
-    \textbf{Rex} & Speed 300+&\\ \\[-1em]
-    \textbf{Fives} & Speed 230+ & H/P 170k+\\ \\[-1em]
-    \textbf{Echo} & CC 55\%+ & Special Offense 10.000+\\ \\[-1em]
-    \textbf{ARC} & Speed 280+ & Offense 10.000+\\ \\[-1em]
+    \textbf{Rey (GL)} & Speed 575+ & HP 180k+\\ \\[-1em]
+    \textbf{JTR} & Speed 260+ &\\ \\[-1em]    
+    \textbf{BB-8} & Speed 300+ &\\ \\[-1em]
+    \textbf{R2-D2} & Speed 290+ & HP 65k+\\ \\[-1em]
+    \textbf{Hero Finn} & Speed 320+ & Special Offense 10.500+\\ \\[-1em]
+    \textbf{Hero Poe} & Speed 270+ & Special Offense 10.500+\\
+\end{tabularx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{First Order}
+\begin{center}
+    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
+        \hline
+        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
+        \textbf{SL Kylo Ren} & \image{cd.png} , \image{health.png} & CD & Offense & HP & Speed\\\hline
+        \textbf{General Hux} & \image{speed.png} , \image{health.png} & CD/HP & HP & HP & Speed\\\hline
+        \textbf{KRU} & \image{health.png} , \image{defense.png} & HP & HP & HP & Speed\\\hline
+        \textbf{Kylo} & \image{speed.png} , \image{health.png} & CD/H/P & Off/H/P & P$>$H & Speed\\\hline
+        \textbf{FOX} & \image{cd.png} , \image{health.png} & CD & HP & HP & Speed\\\hline
+        \textbf{FOST} & \image{health.png} , \image{tenacity.png} & H/P & H/P/Tena & P$>$H & Speed\\\hline
+        \textbf{Sith Trooper} & \image{cd.png} , \image{cc.png} & CD & Offense & H$>$P & Speed\\\hline
+    \end{tabularx}
+\end{center}
+\section*{Specifics}
+\begin{tabularx}\textwidth{l l l l}
+    \textbf{SL Kylo Ren} & Speed 500+ & Offense 11.000+ & HP 120k+\\ \\[-1em]
+    \textbf{General Hux} & Speed 270+ & &\\ \\[-1em]    
+    \textbf{KRU} & Speed 210+ & HP 70k+&\\ \\[-1em]    
+    \textbf{Kylo} & Speed 260+ &&\\ \\[-1em]
+    \textbf{FOX} & Speed 210+ & HP 45k+&\\ \\[-1em]
+    \textbf{FOST} & Speed 190+ & H/P 95k+ & Tenacity 100\%+\\ \\[-1em]
+    \textbf{Sith Trooper} & Speed 240+ & Offense 8.500+&\\
 \end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -304,53 +380,6 @@ Changes from revision 2.1.0:
 \end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Resistance (JTR)}
-\begin{center}
-    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
-        \hline
-        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
-        \textbf{JTR} & \image{cd.png},\image{health.png}/\image{potency.png} & CD & Off/Potency & P$>$H & Speed\\\hline
-        \textbf{BB-8} & \image{speed.png} & H/P & H/P & P$>$H & Speed\\\hline
-        \textbf{R2-D2} & \image{speed.png} , \image{health.png} & HP & HP & HP & Speed\\\hline
-        \textbf{HeroFinn} & \image{speed.png} & CD & Offense & P$>$H & Speed\\\hline
-        \textbf{HeroPoe} & \image{offense.png}/\image{cd.png},\image{potency.png} & CD & Offense & P$>$H & Speed\\\hline
-    \end{tabularx}
-\end{center}
-\section*{Specifics}
-\begin{tabularx}\textwidth{l l l}
-    \textbf{JTR} & Speed 260+ &\\ \\[-1em]    
-    \textbf{BB-8} & Speed 300+ &\\ \\[-1em]
-    \textbf{R2-D2} & Speed 290+ & HP 65k+\\ \\[-1em]
-    \textbf{Hero Finn} & Speed 320+ & Special Offense 10.500+\\ \\[-1em]
-    \textbf{Hero Poe} & Speed 270+ & Special Offense 10.500+\\
-\end{tabularx}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\chapter{First Order}
-\begin{center}
-    \begin{tabularx}\textwidth{ |l|| *{5}{Y|}}
-        \hline
-        Egység & Modset & \image{triangle.png} & \image{cross.png} & \image{circle.png} & \image{arrow.png}\\ \hline\hline
-        \textbf{General Hux} & \image{speed.png} , \image{health.png} & CD/HP & HP & HP & Speed\\\hline
-        \textbf{KRU} & \image{health.png} , \image{defense.png} & HP & HP & HP & Speed\\\hline
-        \textbf{Kylo} & \image{speed.png} , \image{health.png} & CD/H/P & Off/H/P & P$>$H & Speed\\\hline
-        \textbf{FOX} & \image{cd.png} , \image{health.png} & CD & HP & HP & Speed\\\hline
-        \textbf{FOST} & \image{health.png} , \image{tenacity.png} & H/P & H/P/Tena & P$>$H & Speed\\\hline
-        \textbf{Sith Trooper} & \image{cd.png} , \image{cc.png} & CD & Offense & H$>$P & Speed\\\hline
-    \end{tabularx}
-\end{center}
-\section*{Specifics}
-\begin{tabularx}\textwidth{l l l l}
-    \textbf{General Hux} & Speed 270+ & &\\ \\[-1em]    
-    \textbf{KRU} & Speed 210+ & HP 70k+&\\ \\[-1em]    
-    \textbf{Kylo} & Speed 260+ &&\\ \\[-1em]
-    \textbf{FOX} & Speed 210+ & HP 45k+&\\ \\[-1em]
-    \textbf{FOST} & Speed 190+ & H/P 95k+ & Tenacity 100\%+\\ \\[-1em]
-    \textbf{Sith Trooper} & Speed 240+ & Offense 8.000+&\\
-\end{tabularx}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Empire}
 \begin{center}
@@ -488,15 +517,22 @@ Changes from revision 2.1.0:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Utószó, Disclaimer}
-Jelen dokumentum első sorban PvP-re, és 5.5M+ GP-vel rendelkező accountokra lett szabva. Fontos kiemelni, hogy bizonyos értékek ugyan túlzőnak tűnhetnek, ugyanakkor ezek csak \textbf{CÉLOK}, és nem pedig követelmények, az arányok, a megfelelő hozzáállás a fontos.
+\chapter{Utószó}
+Ez a dokumentum első sorban PvP-re, és 5.5M+ GP-vel rendelkező accountokra lett szabva. Fontos kiemelni, hogy bizonyos értékek ugyan túlzónak tűnhetnek, ugyanakkor ezek csak \textbf{CÉLOK}, és nem pedig követelmények, az arányok, a megfelelő hozzáállás a fontos.
 \\
 \\
-Fontos ugyanakkor kiemelni, hogy önmagában az, ha egy roster jól van modolva nem jelent egyenes utat a sikerhez, de legalább nem szórja tele az ember azt maga előtt rajzszegekkel, mint egy rosszul modolt account esetén.
+Kiemelendő ugyanakkor, hogy önmagában az, ha egy roster jól van modolva nem jelent egyenes utat a sikerhez, de legalább nem szórja tele az ember azt maga előtt rajzszegekkel, mint egy rosszul modolt account esetén.
 \\
 \\
-\textbf{Ez a dokumentum belsős MAW dokumentumokon és bizalmasan kezelendő információkon alapul. Korlátozott, belső használatra, terjesztés csak előzetes engedéllyel.}
+\Large \textbf{Amennyiben valaki úgy érzi, magasabb szintre emelné az acccountját és ezzel együtt a modolását is, az keressen meg nyugodt szívvel Discordon (DE$\Delta$DSH07\#9992). 
 \\
 \\
-\LARGE\textcopyright DEADSH07 2020. február
+Régóta nyújtok teljes roster-remodot, amit magyaroknak kedvezményes áron tudok felajánlani!
+(account mérettől függően).}
+\\
+\\
+Részletek privátban!
+\\
+\\
+\LARGE\textcopyright DEADSH07 2020. április
 \end{document}
